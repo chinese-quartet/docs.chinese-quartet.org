@@ -1,0 +1,10 @@
+site_name: Chinese Quartet
+site_description: 'A docs test'
+site_author: 'Jingcheng Yang'
+docs_dir: docs/
+repo_name: 'chinese-quartet/chinese-quartet.github.io'
+repo_url: 'https://github.com/chinese-quartet/chinese-quartet.github.io'
+nav:
+  - Home: index.md
+theme:
+  name: 'material'
