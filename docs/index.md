@@ -4,10 +4,10 @@ hide:
   # - toc
 ---
 
-<h2 align="center">Docs for Quartet Data Portal</h2>
-<p align="center">Quality Control and Data Integration of Multi-omics Profiling</p>
+<h2 style="text-align: center;">Docs for Quartet Data Portal</h2>
+<p style="text-align: center;">Quality Control and Data Integration of Multi-omics Profiling</p>
 
-<p align="center">
+<p style="text-align: center;">
 <img src="https://img.shields.io/github/license/chinese-quartet/docs.chinese-quartet.org.svg?label=License" alt="License"> 
 <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/releases"><img alt="Latest Release" src="https://img.shields.io/github/release/chinese-quartet/docs.chinese-quartet.org.svg?label=Latest%20Release"/></a>
 <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml"><img alt="Quality Control" src="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml/badge.svg"/></a>
@@ -17,16 +17,16 @@ Multi-omics (or molecular phenomics) profiling at the genomic, transcriptomic, p
 
 The Quartet Project provides publicly accessible multi-omics reference materials and practical tools to enhance the reproducibility and reliability of multi-omics results. Well-characterized multiomics reference materials and quality control metrics pertinent to precision medicine study purposes can be used to measure and mitigate technical variation, enabling more accurate cross-batch and cross-omics data integration in increasingly large-scale and longitudinal studies such as the International Human Phenome Project.
 
+## Introduction
+
+<iframe width="800" height="400" src="https://www.youtube.com/embed/cDQydyuT_Ps"  frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Quick Start
-### General
-
-### Request Reference Materials
-
-### Request Omics Data
-
-### Register Account
-
-### Analyze Customized Data
-
+- [FAQs](./users/faqs.md)
+- [Request Reference Materials](./users/request_reference_materials.md)
+- [Request Omics Data](./users/request_omics_data.md)
+- [Register Account](./users/register_account.md)
+- [Analyze Customized Data](./users/analyze_customized_data.md)
+  - [How to prepare your metadata?](./users/metadata.md)
 
 ## For developers

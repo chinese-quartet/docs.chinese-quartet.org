@@ -1,0 +1,2 @@
+## Why can't you register a Quartet Data Portal account by yourself?
+The reason there is no "Register" button is that the general process is for users to apply for reference materials as a guest first. This is to facilitate the confirmation of the applicant's information as well as to build a trust and consensus between the two parties, and at all times applicants should avoid uploading and analyzing non-Quartet data on our platform.
