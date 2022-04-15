@@ -22,7 +22,6 @@ extra_css:
   - stylesheets/extra.css
 plugins:
   - search
-  - git-revision-date
 extra:
   homepage: https://chinese-quartet.org
   social:
