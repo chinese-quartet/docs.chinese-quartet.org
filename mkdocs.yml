@@ -1,10 +1,55 @@
-site_name: Chinese Quartet
-site_description: 'A docs test'
+# Please access https://squidfunk.github.io/mkdocs-material for more details.
+site_name: Quartet Data Portal
+site_description: 'Quality Control and Data Integration of Multi-omics Profiling'
 site_author: 'Jingcheng Yang'
 docs_dir: docs/
-repo_name: 'chinese-quartet/docs.chinese-quartet.org'
-repo_url: 'https://github.com/chinese-quartet/docs.chinese-quartet.org'
+repo_name: 'chinese-quartet'
+repo_url: 'https://github.com/chinese-quartet'
+edit_uri: docs.chinese-quartet.org/edit/master/docs/
 nav:
-  - Home: index.md
+  - 'Getting Started': index.md
+  - Users: 
+    - News: users/news.md
+    - 'Request Reference Materials': users/request_reference_materials.md
+    - 'Request Omics Data': users/request_omics_data.md
+    - 'Register Account': users/register_account.md
+    - 'Analyze Customized Data': users/analyze_customized_data.md
+  - Developers:
+    - News: developers/changelog.md
+markdown_extensions:
+  - meta
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search
+  - git-revision-date
+extra:
+  homepage: https://chinese-quartet.org
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chinese-quartet
+      name: Chinese Quartet
+  generator: false
+copyright: Copyright &copy; 2016 - 2022 Quartet Team
 theme:
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: blue
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to light mode
   name: 'material'
