@@ -4,7 +4,7 @@
 <p align="center">
 <img src="https://img.shields.io/github/license/chinese-quartet/docs.chinese-quartet.org.svg?label=License" alt="License"> 
 <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/releases"><img alt="Latest Release" src="https://img.shields.io/github/release/chinese-quartet/docs.chinese-quartet.org.svg?label=Latest%20Release"/></a>
-<a href="https://github.com/biominer-lab/seqc-datahub/actions/workflows/maqc_rna.yml"><img alt="Quality Control" src="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml/badge.svg"/></a>
+<a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml"><img alt="Quality Control" src="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml/badge.svg"/></a>
 </p>
 
 Multi-omics (or molecular phenomics) profiling at the genomic, transcriptomic, proteomic, and metabolomic levels is the cornerstone of high-throughput technologies for discovering biomarkers for precision medicine. However, the lack of quality control procedures of multi-omics profiling during data generation and data analysis can lead to false findings, raising serious concerns about the reliability of multi-omics studies.
