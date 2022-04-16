@@ -40,9 +40,10 @@
 <!-- Hero for landing page -->
 <section class="mdx-container" style="display: flex; flex-direction: column; flex-grow: 1;">
   <div class="md-grid md-typeset">
-    <div class="mdx-hero" style="align-items: stretch; display: flex; color: var(--md-primary-bg-color); margin: 0 0.8rem;">
+    <div class="mdx-hero"
+      style="align-items: stretch; display: flex; color: var(--md-primary-bg-color); margin: 0 0.8rem;">
       <!-- Hero content -->
-      <div class="mdx-hero__content" style="margin-top: 3.5rem; max-width: 19rem; padding-bottom: 14vw;">
+      <div class="mdx-hero__content" style="margin-top: 3.5rem; padding-bottom: 14vw;">
         <h1 style="color: currentcolor; font-weight: 700; margin-bottom: 1rem;">
           Technical documentation that just works
         </h1>
@@ -50,24 +51,29 @@
         <p style="text-align: left;">
           <img src="https://img.shields.io/github/license/chinese-quartet/docs.chinese-quartet.org.svg?label=License"
             alt="License">
-          <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/releases"><img alt="Latest Release"
-              src="https://img.shields.io/github/release/chinese-quartet/docs.chinese-quartet.org.svg?label=Latest%20Release" /></a>
-          <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml"><img
-              alt="Quality Control"
-              src="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml/badge.svg" /></a>
+          <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/releases">
+            <img alt="Latest Release"
+              src="https://img.shields.io/github/release/chinese-quartet/docs.chinese-quartet.org.svg?label=Latest%20Release" />
+          </a>
+          <a href="https://docs.chinese-quartet.org">
+            <img alt="Status"
+              src="https://img.shields.io/github/workflow/status/chinese-quartet/docs.chinese-quartet.org/publish-docs/master?label=Status">
+          </a>
         </p>
         <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
           class="md-button md-button--primary">
           Quick Start
         </a>
-        <a href="https://chinese-quartet.org" target="_blank" style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;" title="Material for MkDocs Insiders" class="md-button">
+        <a href="https://chinese-quartet.org" target="_blank"
+          style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;"
+          title="Material for MkDocs Insiders" class="md-button">
           Launch Data Portal
         </a>
       </div>
 
       <!-- Hero image -->
       <div class="mdx-hero__image">
-        <img src="/assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
+        <img src="/assets/images/illustration.png" alt="" width="1000" height="1200" draggable="false">
       </div>
     </div>
   </div>
