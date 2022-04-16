@@ -70,7 +70,10 @@ nav:
     - 'Request Reference Materials': getting_started/request_reference_materials.md
     - 'Request Omics Data': getting_started/request_omics_data.md
     - 'Register Account': getting_started/register_account.md
-    - 'Analyze Customized Data':
+    - 'Upload Your Data':
+      - 'How to Prepare Your Metadata?': getting_started/prepare_metadata.md
+      - 'How to Upload Your Data & Metadata?': getting_started/upload_data.md
+    - 'Analyze Your Data':
       - 'Genomics Data': getting_started/pipelines/genomics.md
       - 'Transcriptomics Data': getting_started/pipelines/transcriptomics.md
       - 'Proteomics Data': getting_started/pipelines/proteomics.md
@@ -80,6 +83,7 @@ nav:
   - Tools: 
     - Introduction: tools/index.md
     - 'Data Transfer Tool Command Line Documentation': tools/ossutil.md
+    - 'Data Transfer Tool UI Documentation': tools/ossbrowser.md
   - 'Data Dictionary':
     - About: data_dictionary/about.md
     - 'How to Prepare Your Metadata?': data_dictionary/metadata.md
