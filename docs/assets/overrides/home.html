@@ -1,12 +1,5 @@
 {% extends "main.html" %}
 
-{% block announce %}
-<span>
-  <strong>{{ config.announce }}</strong>: 
-  {{ config.announce_text }}
-</span>
-{% endblock %}
-
 <!-- Render hero under tabs -->
 {% block tabs %}
 {{ super() }}
@@ -54,12 +47,21 @@
           Technical documentation that just works
         </h1>
         <p>{{ config.site_description }}. Set up in several minutes.</p>
+        <p style="text-align: left;">
+          <img src="https://img.shields.io/github/license/chinese-quartet/docs.chinese-quartet.org.svg?label=License"
+            alt="License">
+          <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/releases"><img alt="Latest Release"
+              src="https://img.shields.io/github/release/chinese-quartet/docs.chinese-quartet.org.svg?label=Latest%20Release" /></a>
+          <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml"><img
+              alt="Quality Control"
+              src="https://github.com/chinese-quartet/docs.chinese-quartet.org/actions/workflows/publish-docs.yml/badge.svg" /></a>
+        </p>
         <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
           class="md-button md-button--primary">
           Quick Start
         </a>
         <a href="https://chinese-quartet.org" target="_blank" style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;" title="Material for MkDocs Insiders" class="md-button">
-          Quartet Data Portal
+          Launch Data Portal
         </a>
       </div>
 

@@ -8,23 +8,22 @@ docs_dir: docs/
 repo_name: 'chinese-quartet'
 repo_url: 'https://github.com/chinese-quartet'
 edit_uri: docs.chinese-quartet.org/edit/master/docs/
-nav:
-  - Home: index.md
-  - 'Getting Started': getting_started.md
-  - Users: 
-    - FAQs: users/faqs.md
-    - News: users/news.md
-    - 'Request Reference Materials': users/request_reference_materials.md
-    - 'Request Omics Data': users/request_omics_data.md
-    - 'Register Account': users/register_account.md
-    - 'Analyze Customized Data': users/analyze_customized_data.md
-    - 'How to Prepare Your Metadata?': users/metadata.md
-  - Developers:
-    - News: developers/changelog.md
 markdown_extensions:
   - meta
+  - abbr
+  - admonition
+  - pymdownx.details
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 plugins:
   - search
 extra:
@@ -36,7 +35,7 @@ extra:
   generator: false
 copyright: Copyright &copy; 2016 - 2022 Quartet Team
 theme:
-  custom_dir: docs/overrides
+  custom_dir: docs/assets/overrides
   features:
     - navigation.instant
     - navigation.tabs
@@ -60,3 +59,30 @@ theme:
         icon: material/toggle-switch-off-outline 
         name: Switch to light mode
   name: 'material'
+
+# Table of contents
+nav:
+  - Home: index.md
+  - 'Getting Started':
+    - Introduction: getting_started/introduction.md
+    - FAQs: getting_started/faqs.md
+    - News: getting_started/news.md
+    - 'Request Reference Materials': getting_started/request_reference_materials.md
+    - 'Request Omics Data': getting_started/request_omics_data.md
+    - 'Register Account': getting_started/register_account.md
+    - 'Analyze Customized Data':
+      - 'Genomics Data': getting_started/pipelines/genomics.md
+      - 'Transcriptomics Data': getting_started/pipelines/transcriptomics.md
+      - 'Proteomics Data': getting_started/pipelines/proteomics.md
+      - 'Metabolomics Data': getting_started/pipelines/metabolomics.md
+  - 'Data File & Pipelines':
+    - Introduction: data_files/introduction.md
+  - Tools: 
+    - Introduction: tools/index.md
+    - 'Data Transfer Tool Command Line Documentation': tools/ossutil.md
+  - 'Data Dictionary':
+    - About: data_dictionary/about.md
+    - 'How to Prepare Your Metadata?': data_dictionary/metadata.md
+    - 'Release Notes': data_dictionary/release_notes.md
+  - Developers:
+    - News: developers/changelog.md
