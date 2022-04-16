@@ -81,7 +81,6 @@ nav:
   - 'Data File & Pipelines':
     - Introduction: data_files/introduction.md
   - Tools: 
-    - Introduction: tools/index.md
     - 'Data Transfer Tool Command Line Documentation': tools/ossutil.md
     - 'Data Transfer Tool UI Documentation': tools/ossbrowser.md
   - 'Data Dictionary':
