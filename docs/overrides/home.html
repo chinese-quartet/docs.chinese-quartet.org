@@ -1,0 +1,79 @@
+{% extends "main.html" %}
+
+{% block announce %}
+<span>
+  <strong>{{ config.announce }}</strong>: 
+  {{ config.announce_text }}
+</span>
+{% endblock %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+{{ super() }}
+
+<!-- Additional styles for landing page -->
+<style>
+  /* Application header should be static for the landing page */
+  .md-header {
+    position: initial;
+  }
+
+  /* Remove spacing, as we cannot hide it completely */
+  .md-main__inner {
+    margin: 0;
+  }
+
+  /* Hide main content for now */
+  .md-content {
+    display: none;
+  }
+
+  /* Hide table of contents */
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+
+  /* Hide navigation */
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+
+</style>
+
+<!-- Hero for landing page -->
+<section class="mdx-container" style="display: flex; flex-direction: column; flex-grow: 1;">
+  <div class="md-grid md-typeset">
+    <div class="mdx-hero" style="align-items: stretch; display: flex; color: var(--md-primary-bg-color); margin: 0 0.8rem;">
+      <!-- Hero content -->
+      <div class="mdx-hero__content" style="margin-top: 3.5rem; max-width: 19rem; padding-bottom: 14vw;">
+        <h1 style="color: currentcolor; font-weight: 700; margin-bottom: 1rem;">
+          Technical documentation that just works
+        </h1>
+        <p>{{ config.site_description }}. Set up in several minutes.</p>
+        <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary">
+          Quick start
+        </a>
+        <a href="https://chinese-quartet.org" style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;" title="Material for MkDocs Insiders" class="md-button">
+          Quartet Data Portal
+        </a>
+      </div>
+
+      <!-- Hero image -->
+      <div class="mdx-hero__image">
+        <img src="/assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}

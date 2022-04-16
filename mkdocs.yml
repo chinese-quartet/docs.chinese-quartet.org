@@ -2,12 +2,15 @@
 site_name: Quartet Data Portal
 site_description: 'Quality Control and Data Integration of Multi-omics Profiling'
 site_author: 'Jingcheng Yang'
+announce: 'Quartet Team'
+announce_text: 'a development version has been released on <a href="https://dev.chinese-quartet.org" target="_blank">https://dev.chinese-quartet.org</a>'
 docs_dir: docs/
 repo_name: 'chinese-quartet'
 repo_url: 'https://github.com/chinese-quartet'
 edit_uri: docs.chinese-quartet.org/edit/master/docs/
 nav:
-  - 'Getting Started': index.md
+  - Home: index.md
+  - 'Getting Started': getting_started.md
   - Users: 
     - FAQs: users/faqs.md
     - News: users/news.md
@@ -33,6 +36,7 @@ extra:
   generator: false
 copyright: Copyright &copy; 2016 - 2022 Quartet Team
 theme:
+  custom_dir: docs/overrides
   features:
     - navigation.instant
     - navigation.tabs
@@ -41,8 +45,10 @@ theme:
     - search.highlight
     - search.suggest
     - search.share
-  logo: assets/logo.png
-  favicon: assets/logo.png
+  logo: assets/images/logo.png
+  icon:
+      repo: fontawesome/brands/github
+  favicon: assets/images/logo.png
   palette:
     - scheme: default
       toggle:
