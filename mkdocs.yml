@@ -1,5 +1,5 @@
 # Please access https://squidfunk.github.io/mkdocs-material for more details.
-site_name: Quartet Data Portal
+site_name: Quartet Data Portal Docs
 site_description: 'Quality Control and Data Integration of Multi-omics Profiling'
 site_author: 'Jingcheng Yang'
 announce: 'Quartet Team'
@@ -26,6 +26,7 @@ extra_css:
   - assets/stylesheets/extra.css
 plugins:
   - search
+  - git-revision-date
 extra:
   homepage: https://chinese-quartet.org
   social:
@@ -89,3 +90,6 @@ nav:
     - 'Release Notes': data_dictionary/release_notes.md
   - Developers:
     - News: developers/changelog.md
+  - About:
+    - Members: about/members.md
+    - Publications: about/publications.md
