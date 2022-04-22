@@ -13,6 +13,7 @@ markdown_extensions:
   - abbr
   - admonition
   - pymdownx.details
+  - attr_list
   - md_in_html
   - toc:
       permalink: true
