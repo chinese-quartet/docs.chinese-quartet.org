@@ -1,4 +1,4 @@
-## DNA-Seq
+## Omics Data Format
 
 The data format that can be analysed online are:
 

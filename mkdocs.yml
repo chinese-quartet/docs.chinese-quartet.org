@@ -66,31 +66,60 @@ theme:
 nav:
   - Home: index.md
   - 'Getting Started':
-    - Introduction: getting_started/introduction.md
-    - FAQs: getting_started/faqs.md
-    - News: getting_started/news.md
-    - 'Request Reference Materials': getting_started/request_reference_materials.md
-    - 'Request Omics Data': getting_started/request_omics_data.md
+    - Overview: getting_started/introduction.md
+    - Toolbars: getting_started/toolbars.md
     - 'Register Account': getting_started/register_account.md
-    - 'Upload Your Data':
-      - 'How to Prepare Your Metadata?': getting_started/prepare_metadata.md
-      - 'How to Upload Your Data & Metadata?': getting_started/upload_data.md
+    - 'Request Reference Materials': getting_started/request_reference_materials.md
+    - 'Access Quartet MultiOmics Data': getting_started/request_omics_data.md
     - 'Analyze Your Data':
-      - 'Genomics Data': getting_started/pipelines/genomics.md
-      - 'Transcriptomics Data': getting_started/pipelines/transcriptomics.md
-      - 'Proteomics Data': getting_started/pipelines/proteomics.md
-      - 'Metabolomics Data': getting_started/pipelines/metabolomics.md
-  - 'Data File & Pipelines':
-    - Introduction: data_files/introduction.md
+      - 'Quality Assessment Page': getting_started/quality_assessment_page.md
+      - 'Submit Data': getting_started/submit_data.md
+      - 'Select Pipeline': getting_started/select_pipeline.md
+      - 'Generate QC Report': getting_started/qc_report.md
+      - 'Analysis History': getting_started/analysis_history.md
+    - 'Explore Reference Datasets':
+      - 'Browser and Download': getting_started/browser_and_download.md
+      - 'Interactive Visualization': getting_started/interactive_visualization.md
+  - 'Data & Pipelines':
+    - Genomcis: 
+      - 'Omics Data Format': data_pipelines/genomics/omics_data_format.md
+      - 'Metadata Template': data_pipelines/genomics/metadata_template.md
+      - 'Analysis Pipeline': data_pipelines/genomics/analysis_pipeline.md
+      - 'QC Report': data_pipelines/genomics/qc_report.md
+    - Transcriptomics:
+      - 'Omics Data Format': data_pipelines/transcriptomics/omics_data_format.md
+      - 'Metadata Template': data_pipelines/transcriptomics/metadata_template.md
+      - 'Analysis Pipeline': data_pipelines/transcriptomics/analysis_pipeline.md
+      - 'QC Report': data_pipelines/transcriptomics/qc_report.md
+    - Proteomics:
+      - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
+      - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
+      - 'Analysis Pipeline': data_pipelines/proteomics/analysis_pipeline.md
+      - 'QC Report': data_pipelines/proteomics/qc_report.md
+    - Metabolomics:
+      - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
+      - 'Metadata Template': data_pipelines/metabolomics/metadata_template.md
+      - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
+      - 'QC Report': data_pipelines/metabolomics/qc_report.md
   - Tools: 
-    - 'Data Transfer Tool Command Line Documentation': tools/ossutil.md
-    - 'Data Transfer Tool UI Documentation': tools/ossbrowser.md
-  - 'Data Dictionary':
-    - About: data_dictionary/about.md
-    - 'How to Prepare Your Metadata?': data_dictionary/metadata.md
-    - 'Release Notes': data_dictionary/release_notes.md
-  - Developers:
-    - News: developers/changelog.md
+    - 'Data Repo': tools/data_repo.md
+    - 'Data Transfer Tools':
+      - 'Data Transfer Tool Command Line Documentation': tools/ossutil.md
+      - 'Data Transfer Tool UI Documentation': tools/ossbrowser.md
+    - 'Data Analysis Tools':
+      - 'Choppy App': tools/choppy_apps.md
+      - 'MultiReport': tools/multireport.md
+    - 'Visualization Tools': tools/visualization_tools.md
+  # - 'Data Dictionary':
+  #   - About: data_dictionary/about.md
+  #   - 'How to Prepare Your Metadata?': data_dictionary/metadata.md
+  #   - 'Release Notes': data_dictionary/release_notes.md
   - About:
-    - Members: about/members.md
+    - News: about/news.md
     - Publications: about/publications.md
+    - Quartet Team: about/members.md
+    - Collaborators: about/collaborators.md
+    - Policies: about/policies.md
+    - FAQs: about/faqs.md
+  # - Developers:
+  #   - News: developers/changelog.md
