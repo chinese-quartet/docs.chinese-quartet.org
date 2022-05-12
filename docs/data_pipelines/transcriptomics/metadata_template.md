@@ -4,7 +4,7 @@
     Chinese means `With Chinese Annotations`;
 
 ## Latest Version
-- [`English Version - Recommended`](/assets/templates/2022050501_transcriptomics-metadata-template_english.xlsx) 
+- [`English Version - Recommended`](/assets/templates/2022051201_transcriptomics-metadata-template_english.xlsx) 
 - [`Chinese Version`](/assets/templates/2022051201_transcriptomics-metadata-template_chinese.xlsx)
 
 ## Previous Versions
