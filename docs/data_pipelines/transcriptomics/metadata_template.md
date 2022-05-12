@@ -11,7 +11,7 @@
 
 ### [2022051201 - English](/assets/templates/2022051201_transcriptomics-metadata-template_english.xlsx)
 
-    CHANGELOGS: 
+    CHANGELOG: 
     This is the first commit.
 
 ### [2022051201 - Chinese](/assets/templates/2022051201_transcriptomics-metadata-template_chinese.xlsx)
