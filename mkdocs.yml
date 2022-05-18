@@ -82,24 +82,26 @@ nav:
       - 'Interactive Visualization': getting_started/interactive_visualization.md
   - 'Data & Pipelines':
     - Genomcis: 
-      - 'Omics Data Format': data_pipelines/genomics/omics_data_format.md
+      - 'Introduction': data_pipelines/genomics/intro.md
       - 'Metadata Template': data_pipelines/genomics/metadata_template.md
+      - 'Omics Data Format': data_pipelines/genomics/omics_data_format.md
       - 'Analysis Pipeline': data_pipelines/genomics/analysis_pipeline.md
       - 'QC Report': data_pipelines/genomics/qc_report.md
     - Transcriptomics:
-      - 'Omics Data Format': data_pipelines/transcriptomics/omics_data_format.md
+      - 'Introduction': data_pipelines/transcriptomics/intro.md
       - 'Metadata Template': data_pipelines/transcriptomics/metadata_template.md
+      - 'Omics Data Format': data_pipelines/transcriptomics/omics_data_format.md
       - 'Analysis Pipeline': data_pipelines/transcriptomics/analysis_pipeline.md
       - 'QC Report': data_pipelines/transcriptomics/qc_report.md
     - Proteomics:
-      - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
       - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
-      - 'Analysis Pipeline': data_pipelines/proteomics/analysis_pipeline.md
+      - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
+      # - 'Analysis Pipeline': data_pipelines/proteomics/analysis_pipeline.md
       - 'QC Report': data_pipelines/proteomics/qc_report.md
     - Metabolomics:
-      - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
       - 'Metadata Template': data_pipelines/metabolomics/metadata_template.md
-      - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
+      - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
+      # - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
       - 'QC Report': data_pipelines/metabolomics/qc_report.md
   - Tools: 
     - 'Data Repo': tools/data_repo.md
