@@ -5,6 +5,7 @@ The Quartet Multi-omics reference materials and raw datasets are publicly availa
 Users can upload their in-house omics data generated with the Quartet reference sample, select the specific pipeline and parameters, and obtain the analysis results and QC results, which can be managed by the Quartet Data Portal.
 
 Users should follow the steps:
+
 1) Create a dataset by clicking the 'Register & Upload Your Data'
 
 2) Get your access key and secret by clicking 'New Token' button
