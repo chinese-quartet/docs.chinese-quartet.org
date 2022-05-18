@@ -81,6 +81,7 @@ nav:
       - 'Browser and Download': getting_started/browser_and_download.md
       - 'Interactive Visualization': getting_started/interactive_visualization.md
   - 'Data & Pipelines':
+    - Introduction: data_pipelines/intro.md
     - Genomcis: 
       - 'Introduction': data_pipelines/genomics/intro.md
       - 'Metadata Template': data_pipelines/genomics/metadata_template.md
