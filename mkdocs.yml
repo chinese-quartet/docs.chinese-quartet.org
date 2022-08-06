@@ -100,6 +100,7 @@ nav:
       # - 'Analysis Pipeline': data_pipelines/proteomics/analysis_pipeline.md
       - 'QC Report': data_pipelines/proteomics/qc_report.md
     - Metabolomics:
+      - 'Introduction': data_pipelines/metabolomics/intro.md
       - 'Metadata Template': data_pipelines/metabolomics/metadata_template.md
       - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
       # - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
