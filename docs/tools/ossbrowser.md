@@ -1,4 +1,8 @@
-`ossbrowser` is a graphical management tool to upload data to the Quartet Data Portal
+`ossbrowser` is a graphical management tool to upload data to the Quartet Data Portal.
+
+| Name        | Recommendation | Notice                                                                                                     | Category | Characteristics               | Expected Average Speed |
+| ----------- | -------------- | ---------------------------------------------------------------------------------------------------------- | -------- | ----------------------------- | ---------------------- |
+| OSS Browser | Low            | Only use it when the total data volume is less than 100GB and the size of one single file is less than 5GB | GUI Tool | Easy, but slower than OSSUtil | 1-30MB/s               |
 
 #### 1. Download and installation
 The ossbrowser supports the following operating systems: Windows, Linux, and macOS. You can download and install the ossbrowser version that best suits your requirements. 

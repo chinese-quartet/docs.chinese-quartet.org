@@ -1,5 +1,9 @@
 `ossutil` is a user friendly command line tool to upload data to the Quartet Data Portal. It supports the following operating systems: Windows, Linux, and macOS. You can download and install the ossutil version that best suits your requirements. 
 
+| Name    | Recommendation | Notice                                                   | Category      | Characteristics                                          | Expected Average Speed |
+| ------- | -------------- | -------------------------------------------------------- | ------------- | -------------------------------------------------------- | ---------------------- |
+| OSSUtil | High           | Recommend to use it on a Linux server with wired network | Terminal Tool | Fast, Powerful and Supporting resuming from a breakpoint | 40-100MB/s             |
+
 - Click [here](https://www.alibabacloud.com/help/doc-detail/120075.htm) to download ossutil.
 - Click [here](https://www.alibabacloud.com/help/doc-detail/50452.htm) to see more details in ossutil.
 
