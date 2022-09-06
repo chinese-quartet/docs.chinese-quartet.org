@@ -62,13 +62,13 @@ Here is an example that install ossutil on Linux.
 
     The parameters are as prompted:
 
-    - Please enter endpoint: `http://oss-cn-shanghai.aliyuncs.com`
+    - Please enter endpoint: `http://{region}.aliyuncs.com, such as http://oss-cn-shanghai.aliyuncs.com`
 
-    - Please enter accessKeyID: `STS.NSkg1Z5FLmsw8Fd2Emj8THbre`
+    - Please enter accessKeyID: `{accessKey}, such as STS.NSw4TPayxZcbeXQbDfoZiHE16`
 
-    - Please enter accessKeySecret: `cDuqiEDWoBDVo7drg9Lx5h2qMKr5PkfC4E63K1Vqedx`
+    - Please enter accessKeySecret: `{accessSecret}, such as 38DvQmDt7o7jkrtGXEakjXJMXvoAhYF4cKsGJUaX9Lhz`
 
-    - Please enter stsToken: `CAIS2wR1q6Ft5B2yfS1kU4Zrd4p6fZhzz2IHlJdXFgBOEdsf4wlWFR7/....`
+    - Please enter stsToken: `{stsToken}, such as CAIS2wR1q6Ft5B2yfSjIr5DCf....`
 
 #### 4. Upload files
   

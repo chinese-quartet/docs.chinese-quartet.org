@@ -108,10 +108,10 @@ nav:
       # - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
       - 'QC Report': data_pipelines/metabolomics/qc_report.md
   - Tools: 
-    - 'Data Repo': tools/data_repo.md
+    # - 'Data Repo': tools/data_repo.md
     - 'Data Transfer Tools':
-      - 'Data Transfer Tool Command Line Documentation': tools/ossutil.md
-      - 'Data Transfer Tool UI Documentation': tools/ossbrowser.md
+      - 'OSSUtil Documentation': tools/ossutil.md
+      - 'OSSBrowser Documentation': tools/ossbrowser.md
     - 'Data Analysis Tools':
       - 'Choppy App': tools/choppy_apps.md
       - 'MultiReport': tools/multireport.md
