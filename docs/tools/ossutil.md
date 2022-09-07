@@ -1,3 +1,8 @@
+---
+title: OSSUtil
+cn_url: /tools/ossutil_cn
+---
+
 `ossutil` is a user friendly command line tool to upload data to the Quartet Data Portal. It supports the following operating systems: Windows, Linux, and macOS. You can download and install the ossutil version that best suits your requirements. 
 
 | Name    | Recommendation | Notice                                                   | Category      | Characteristics                                          | Expected Average Speed |

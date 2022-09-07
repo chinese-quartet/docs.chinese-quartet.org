@@ -110,8 +110,8 @@ nav:
   - Tools: 
     # - 'Data Repo': tools/data_repo.md
     - 'Data Transfer Tools':
-      - 'OSSUtil Documentation': tools/ossutil.md
-      - 'OSSBrowser Documentation': tools/ossbrowser.md
+      - 'OSSUtil': tools/ossutil.md
+      - 'OSSBrowser': tools/ossbrowser.md
     - 'Data Analysis Tools':
       - 'Choppy App': tools/choppy_apps.md
       - 'MultiReport': tools/multireport.md

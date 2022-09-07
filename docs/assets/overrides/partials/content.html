@@ -8,6 +8,16 @@
 <a href="{{ page.edit_url | replace(edit, view) }}" title="View source of this page" class="md-content__button md-icon">
   {% include ".icons/material/file-eye-outline.svg" %}
 </a>
+{% if page.meta.en_url %}
+<a href="{{ page.meta.en_url }}" class="md-content__button md-icon">
+  <img width="24" height="24" src="/assets/images/language.png"/>
+</a>
+{% endif %}
+{% if page.meta.cn_url %}
+<a href="{{ page.meta.cn_url }}" class="md-content__button md-icon">
+  <img width="24" height="24" src="/assets/images/language.png"/>
+</a>
+{% endif %}
 {% endif %}
 
 <!-- Tags -->

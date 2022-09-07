@@ -1,3 +1,12 @@
+## Sep 7, 2022
+
+- **DocSys Improvement**
+    - Add a third-party comment system to the footer
+    - Add a language switcher in the header of doc (English and Chinese.)
+
+- **Documentation Improvement**
+    - Add a Chinese document for ossutil
+
 ## Sep 6, 2022
 
 - **Backend Improvement**
@@ -10,7 +19,7 @@
     ![20220906-ui-improvement.png](/assets/news/20220906-ui-improvement.png)
 
 - **Documentation Improvement**
-    - Update the documentation for data tranfer tools (The ossutil the preferred option.)
+    - Update the document for data tranfer tools (The ossutil the preferred option.)
 
 ## April 15, 2022
 - Added new branch `quartet-data-portal-dev` for faster release.
