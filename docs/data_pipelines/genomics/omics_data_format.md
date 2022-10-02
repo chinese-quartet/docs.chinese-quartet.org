@@ -2,7 +2,7 @@
 
 The data format that can be analysed online are:
 
-- pair-end FASTQ files, with suffixes of  `_LCL5.R1.fastq.gz` and `_LCL5.R2.fastq.gz`. The file naming rules for LCL6, LCL7, LCL8 are the same as above
+- Pair-end FASTQ files, with suffixes of _R1.fastq.gz and _R2.fastq.gz or _R1.fq.gz and _R2.fq.gz.
 
 - unzipped VCF files, with suffixes of `.vcf`.
 
