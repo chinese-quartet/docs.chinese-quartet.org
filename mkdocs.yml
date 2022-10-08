@@ -71,6 +71,7 @@ nav:
     - 'Step by Step':
       - 'Quality Assessment for WGS': getting_started/step_by_step_guide_dna.md
       - 'Quality Assessment for Proteomics': getting_started/step_by_step_guide_protein.md
+      - 'Quality Assessment for Metabolomics': getting_started/step_by_step_guide_metabolite.md
   #  - Toolbars: getting_started/toolbars.md
     - 'Register Account': getting_started/register_account.md
     - 'Request Reference Materials': getting_started/request_reference_materials.md
