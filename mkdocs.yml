@@ -71,19 +71,20 @@ nav:
     - 'Step by Step':
       - 'Quality Assessment for WGS': getting_started/step_by_step_guide_dna.md
       - 'Quality Assessment for Proteomics': getting_started/step_by_step_guide_protein.md
-    - Toolbars: getting_started/toolbars.md
+  #  - Toolbars: getting_started/toolbars.md
     - 'Register Account': getting_started/register_account.md
     - 'Request Reference Materials': getting_started/request_reference_materials.md
     - 'Access Quartet MultiOmics Data': getting_started/request_omics_data.md
-    - 'Analyze Your Data':
-      - 'Quality Assessment Page': getting_started/quality_assessment_page.md
-      - 'Submit Data': getting_started/submit_data.md
-      - 'Select Pipeline': getting_started/select_pipeline.md
-      - 'Generate QC Report': getting_started/qc_report.md
-      - 'Analysis History': getting_started/analysis_history.md
-    - 'Explore Reference Datasets':
-      - 'Browser and Download': getting_started/browser_and_download.md
-      - 'Interactive Visualization': getting_started/interactive_visualization.md
+    - 'Submit Your Raw Omics Data': getting_started/submit_data.md
+  #  - 'Analyze Your Data':
+  #    - 'Quality Assessment Page': getting_started/quality_assessment_page.md
+  #    - 'Submit Data': getting_started/submit_data.md
+  #    - 'Select Pipeline': getting_started/select_pipeline.md
+  #    - 'Generate QC Report': getting_started/qc_report.md
+  #    - 'Analysis History': getting_started/analysis_history.md
+  #  - 'Explore Reference Datasets':
+  #    - 'Browser and Download': getting_started/browser_and_download.md
+  #    - 'Interactive Visualization': getting_started/interactive_visualization.md
   - 'Data & Pipelines':
     - Introduction: data_pipelines/intro.md
     - Genomcis: 
