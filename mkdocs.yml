@@ -98,7 +98,7 @@ nav:
       - 'Metadata Template': data_pipelines/transcriptomics/metadata_template.md
       - 'Omics Data Format': data_pipelines/transcriptomics/omics_data_format.md
       - 'Analysis Pipeline': data_pipelines/transcriptomics/analysis_pipeline.md
-      - 'QC Report': data_pipelines/transcriptomics/qc_report.md
+    #  - 'QC Report': data_pipelines/transcriptomics/qc_report.md
     - Proteomics:
       # - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
       # - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
@@ -123,6 +123,12 @@ nav:
   #   - About: data_dictionary/about.md
   #   - 'How to Prepare Your Metadata?': data_dictionary/metadata.md
   #   - 'Release Notes': data_dictionary/release_notes.md
+  # - Roadmap:
+  #  - Genomics: roadmap/genomics.md
+  #  - Transcriptomics: roadmap/transcriptomics.md
+  #  - Proteomics: roadmap/proteomics.md
+  #  - Metabolomics: roadmap/metabolomics.md
+  #  - Others: roadmap/others.md
   - About:
     - News: about/news.md
     - Publications: about/publications.md
