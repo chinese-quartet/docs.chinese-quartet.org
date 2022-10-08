@@ -70,6 +70,7 @@ nav:
     - Overview: getting_started/introduction.md
     - 'Step by Step':
       - 'Quality Assessment for WGS': getting_started/step_by_step_guide_dna.md
+      - 'Quality Assessment for Proteomics': getting_started/step_by_step_guide_protein.md
     - Toolbars: getting_started/toolbars.md
     - 'Register Account': getting_started/register_account.md
     - 'Request Reference Materials': getting_started/request_reference_materials.md
@@ -90,22 +91,22 @@ nav:
       - 'Metadata Template': data_pipelines/genomics/metadata_template.md
       - 'Omics Data Format': data_pipelines/genomics/omics_data_format.md
       - 'Analysis Pipeline': data_pipelines/genomics/analysis_pipeline.md
-      - 'QC Report': data_pipelines/genomics/qc_report.md
+      # - 'QC Report': data_pipelines/genomics/qc_report.md
     - Transcriptomics:
       - 'Introduction': data_pipelines/transcriptomics/intro.md
       - 'Metadata Template': data_pipelines/transcriptomics/metadata_template.md
       - 'Omics Data Format': data_pipelines/transcriptomics/omics_data_format.md
       - 'Analysis Pipeline': data_pipelines/transcriptomics/analysis_pipeline.md
-      - 'QC Report': data_pipelines/transcriptomics/qc_report.md
+      # - 'QC Report': data_pipelines/transcriptomics/qc_report.md
     - Proteomics:
-      - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
-      - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
+      # - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
+      # - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
       # - 'Analysis Pipeline': data_pipelines/proteomics/analysis_pipeline.md
       - 'QC Report': data_pipelines/proteomics/qc_report.md
     - Metabolomics:
       - 'Introduction': data_pipelines/metabolomics/intro.md
       - 'Metadata Template': data_pipelines/metabolomics/metadata_template.md
-      - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
+      # - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
       # - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
       - 'QC Report': data_pipelines/metabolomics/qc_report.md
   - Tools: 
@@ -113,10 +114,10 @@ nav:
     - 'Data Transfer Tools':
       - 'OSSUtil': tools/ossutil.md
       - 'OSSBrowser': tools/ossbrowser.md
-    - 'Data Analysis Tools':
-      - 'Choppy App': tools/choppy_apps.md
-      - 'MultiReport': tools/multireport.md
-    - 'Visualization Tools': tools/visualization_tools.md
+  #  - 'Data Analysis Tools':
+  #    - 'Choppy App': tools/choppy_apps.md
+  #    - 'MultiReport': tools/multireport.md
+  #  - 'Visualization Tools': tools/visualization_tools.md
   # - 'Data Dictionary':
   #   - About: data_dictionary/about.md
   #   - 'How to Prepare Your Metadata?': data_dictionary/metadata.md
@@ -124,9 +125,9 @@ nav:
   - About:
     - News: about/news.md
     - Publications: about/publications.md
-    - Quartet Team: about/members.md
-    - Collaborators: about/collaborators.md
-    - Policies: about/policies.md
+  #  - Quartet Team: about/members.md
+  #  - Collaborators: about/collaborators.md
+  #  - Policies: about/policies.md
     - FAQs: about/faqs.md
   # - Developers:
   #   - News: developers/changelog.md

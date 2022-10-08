@@ -1,3 +1,7 @@
+## From Quantified Expression Profiles to QC Report
+
+.csv format of quantified expression profiles at metabolite level
+
 > Metabolomics (targeted and untargeted)
 ### Data File
 The data file provides quantitative information on Quartet samples at the metabolite level. 
@@ -20,3 +24,17 @@ With columns accurately named "col_names" (names of samples, identical to their 
 A screenshot of a sample metadata table is shown below.
 
 ![Metabolomics Sample Data](../../assets/images/metabolomics-sample-data.png){ width="60%" }
+
+
+### Step by Step
+As for running the QC pipeline of metabolomics data, you can:
+
+1) go to [http://chinese-quartet.org/#/seq-flow/metqc-report-management](http://chinese-quartet.org/#/seq-flow/metqc-report-management);
+
+2) click the upper right button named "New QC report";
+
+3) click "Step 1: Choose Report", please choose "QC Report for Quartet Metabolomics" ;
+
+4) click "Step 2: Upload Files (s)", please upload your data and metadata files (.csv). 
+
+5) click "Step 3: Parameters & Submit", please fill in the blanks and submit the job.

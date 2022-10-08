@@ -1,3 +1,5 @@
+## From Quantified Expression Profiles to QC Report
+
 ### Data File
 
 The data file contains gene symbols of each protein and its quantitated expression level in each sample (replicate), and the missing values are allowed. The required file format has samples in columns and a column named "rowname". 
@@ -13,3 +15,16 @@ The metadata file has the information of each sample in the data file. With colu
 A screenshot of a sample metadata table is shown below.
 
 ![Proteomics Sample Metdata](../../assets/images/proteomics-sample-metadata.png){ width="50%" }
+
+### Step by Step
+As for running the QC pipeline of proteomics data, you can:
+
+1) go to [http://chinese-quartet.org/#/seq-flow/protqc-report-management](http://chinese-quartet.org/#/seq-flow/protqc-report-management);
+
+2) click the upper right button named "New QC report";
+
+3) click "Step 1: Choose Report", please choose "QC Report for Quartet Proteomics" ;
+
+4) click "Step 2: Upload Files (s)", please upload your data and metadata files (.csv). 
+
+5) click "Step 3: Parameters & Submit", please fill in the blanks and submit the job.

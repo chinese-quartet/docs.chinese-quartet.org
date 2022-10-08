@@ -1,3 +1,10 @@
+## Oct 8, 2022
+
+- **Documentation Improvement**
+    - Add publications
+    - Add a document for proteomics qc report.
+    - Add a document for metabolomics qc report.
+
 ## Sep 7, 2022
 
 - **DocSys Improvement**

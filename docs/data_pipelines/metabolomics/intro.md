@@ -3,4 +3,4 @@
 - [`Data Format` - Follow the data format requirements to prepare your genomics data](./omics_data_format.md)
 
 ## Guide for QC Reports
-- [`QC Report` - QC Report for Quartet Metabolomics](./qc_report.md)
+- [`QC Report` - QC Report for Quartet Metabolomics](./analysis_pipeline.md)
