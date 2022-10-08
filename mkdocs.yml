@@ -98,7 +98,7 @@ nav:
       - 'Metadata Template': data_pipelines/transcriptomics/metadata_template.md
       - 'Omics Data Format': data_pipelines/transcriptomics/omics_data_format.md
       - 'Analysis Pipeline': data_pipelines/transcriptomics/analysis_pipeline.md
-      # - 'QC Report': data_pipelines/transcriptomics/qc_report.md
+      - 'QC Report': data_pipelines/transcriptomics/qc_report.md
     - Proteomics:
       # - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
       # - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md

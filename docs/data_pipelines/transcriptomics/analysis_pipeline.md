@@ -4,6 +4,11 @@ Preliminary processing of raw fastq reads was performed using fastp v0.19.6 to r
 
 Quality control analysis of sequencing data at pre-alignment and post-alignment level was conducted using FastQC v0.11.5[^3], FastQ Screen v0.12.0[^4], Qualimap v2.0.0[^5], and MultiQC v1.8[^6]. 
 
+
+![workflow](/assets/images/rna-workflow.jpeg)
+
+Results generated from this APP can be visualized by QDP report.
+
 ## Reference
 [^1]: Chen, S., Zhou, Y., Chen, Y. & Gu, J. fastp: an ultra-fast all-in-one FASTQ preprocessor. J Bioinformatics 34, i884-i890 (2018).
 [^2]: Pertea, M., Kim, D., Pertea, G.M., Leek, J.T. & Salzberg, S.L. Transcript-level expression analysis of RNA-seq experiments with HISAT, StringTie and Ballgown. Nat Protoc 11, 1650 (2016).
