@@ -6,7 +6,7 @@ For RNA-seq, the quality assessment is started from FASTQ files and can be divid
 
 ## Proteomics
 
-Comming soon...
+For proteomics, the quality assessment is started from expression profiles formatted as .csv files, and the pipeline is implemented into QC Report module. It is based on built-in biological differences of the samples and consistency with the reference dataset at relative quantitation levels. The former is scored as an Signal-to-Noise Ratio (SNR) and displayed in a PCA scatterplot, and the latter is scored as Pearson correlation to the reference dataset and displayed in a scatterplot, in which a strict filter criteria was applied (features with p.adj<0.05 in at least 4 batches were kept). MultiQC was used for compiling QC results together.
 
 ## Metabolomics
 
