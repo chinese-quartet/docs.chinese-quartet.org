@@ -1,4 +1,11 @@
-## Quality Metrics
+### Quality Metrics
+
+|Metric|Description|Range v1|Cutoff v1|
+|-----|--------|--------|---------|
+|Signal-to-Noise Ratio (SNR)|Based on the Quartet design, a Signal-to-Noise Ratio (SNR) metric was established to gauge the performance of a platform, a lab, a protocol, or a batch in distinguishing the intrinsic biological differences (“signal”) among the Quartet samples from variations among technical replicates of the same sample group (“noise”). Generally, a lower SNR value indicates lower discriminating power, vice versa. For an SNR value around or below zero, it means that the magnitude of signal is at a similar level as the noise or even lower than the noise. In this case, it is almost impossible to distinguish different sample groups under the high level of technical noises. Here, we used the first two principal components for calculating SNR, in correspondence with visualization in commonly used two-dimensional PCA plots.|(-∞, +∞)|>12 |
+|Relative correlation with reference datasets (RC)|Relative correlation with reference datasets was calculated based on the Pearson correlation coefficient between the ratio-based expression levels of a dataset for a given pair of groups and the corresponding ratio-based reference datasets, representing the trend of numerical consistency of the ratio-based expression profiles. Reference datasets were pre-defined datasets in the format of a geometric mean by summarizing from the fold-changes calculated from the high-quality RNAseq datasets, providing “ground truth” for benchmarking.|[-1, 1] |>0.89    |
+|Total score|The total performance score is calculated to measure the overall quality of a dataset generated from a lab for its effectiveness in quantifying the transcriptomic differences among the four Quartet RNA reference materials by summarizing reference dataset-independent quality measurement (SNR) and reference dataset-dependent quality measurement (RC). The total score is expressed as the geometrical mean of SNR and RC.|(-∞, +∞)| |
+
 
 ### Raw Data Quality & Mapping Quality
 
@@ -31,20 +38,3 @@
 | exonic                           | Qualimap     | -           | 40% - 60%       |
 | intronic                         | Qualimap     | -           | 40% - 60%       |
 | intergenic                       | Qualimap     | -           | < 10%           |
-
-
-### Quality Metrics
-
-| Quality Metrics                           | Category    | Description                                                                                                                                                                                                                                                 | Reference Value |
-| ----------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| Number of detected genes                  | One group   | This metric is used to estimate the  detection abundance of one sample.                                                                                                                                                                                     | (**, 58,395]    |
-| Detection Jaccard index (JI)              | One group   | Detection JI is the ratio of number of the  genes detected in both replicates than the number of the genes detected in  either of the replicates. This metric is used to estimate the  repeatability of one sample detected gene from different replicates. | [0.8, 1]        |
-| Coefficient of variation (CV)             | One group   | CV is calculated based on the  normalized expression levels in all 3 replicates of one sample for each  genes. This metric is used to estimate the repeatability of one sample  expression level from different replicates.                                 | [0, 0.2]        |
-| Correlation of technical replicates (CTR) | One group   | CTR is calculated based on the correlation  of one sample expression level from different replicates.                                                                                                                                                       | [0.95, 1]       |
-| Signal-to-noise Ratio (SNR)               | More groups | Signal is defined as the average distance  between libraries from the different samples on PCA plots and noise are those  form the same samples. SNR is used to assess the ability to distinguish  technical replicates from different biological samples.  | [5, inf)        |
-| Sensitivity of  detection                 | One group   | Sensitivity is the proportion of  "true" detected genes from reference dataset which can be  correctly detected by the test set.                                                                                                                            | [0.96, 1]       |
-| Specificity of  detection                 | One group   | Specificity is the proportion of  "true" non-detected genes from reference dataset which can be  correctly not detected by the test set.                                                                                                                    | [0.94, 1]       |
-| Consistency  ratio of relative expression | Two groups  | Proportion of genes that falls into  reference range (mean ± 2 fold SD) in relative ratio (log2FC).                                                                                                                                                         | [0.82, 1]       |
-| Correlation of  relative log2FC           | Two groups  | Pearson correlation between mean value  of reference relative ratio and test site.                                                                                                                                                                          | [0.96,1]        |
-| Sensitivity of  DEGs                      | Two groups  | Sensitivity is the proportion of  "true" DEGs from reference dataset which can be correctly  identified as DEG by the test set.                                                                                                                             | [0.80, 1]       |
-| Specificity of  DEGs                      | Two groups  | Specificity is the proportion of  "true" not DEGs from reference dataset which can be can be  correctly identified as non-DEG by the test set.                                                                                                              | [0.95, 1]       |
