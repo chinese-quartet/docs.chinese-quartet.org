@@ -94,8 +94,8 @@ RNA-seq datasets from reference materials were then obtained, consisting of 252 
 
 #### Proteomics
 
-Currently we sent 6 units of Quartet Protein Reference Materials to 6 labs, in which 6 batches of raw datasets and profiled datasets were generated in their inhouse LC-MS/MS systems by labelfree quantitation (both DDA and DIA). Our Cooperators also extracted human proteins (labeled as “Lot1” in our metadata) from the immortalized B-lymphoblastoid cell lines and have generated 26 batches of DDA-based profiled datasets since 2017.
+Currently we sent 6 units of Quartet Protein Reference Materials to 6 labs, in which 6 batches of raw datasets and profiled datasets were generated in their in-house LC-MS/MS systems by label-free quantitation (both DDA and DIA). Our Cooperators also extracted human proteins (labeled as “Lot1” in our metadata) from the immortalized B-lymphoblastoid cell lines and have generated 26 batches of DDA-based profiled datasets since 2017.
 
 #### Metabolomics
 
-We dispensed three biological replicates of each unit of the Quartet Metabolite Reference Materials to six laboratory platforms of five companies. These six laboratories produced a total of 204 metabolic quantitative profiles in 17 datasets (batches) using targeted or untargeted metabolomics strategies. Furthermore, based on the large amount of copies of Quartet metabolite reference materials, we regularly generated targeted metabolomics data with three technical replicates for each unit of the Quartet Metabolite Reference Materials for up to one year in Metabo-Profile (L4).
+We dispensed three biological replicates of each unit of the Quartet Metabolite Reference Materials to six laboratory platforms of five companies. These six laboratories produced a total of 204 metabolic quantitative profiles in 17 datasets (batches) using targeted or un-targeted metabolomics strategies. Furthermore, based on the large amount of copies of Quartet metabolite reference materials, we regularly generated targeted metabolomics data with three technical replicates for each unit of the Quartet Metabolite Reference Materials for up to one year in Metabo-Profile (L4).

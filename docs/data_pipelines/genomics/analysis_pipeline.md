@@ -9,13 +9,13 @@ Quartet quality control analysis pipeline started from FASTQ files is implemente
 - Post-alignment QC of BAM files
 - Germline variant calling
 - Variant calling QC depended on benchmark sets of VCF files
-- Check Mendelian ingeritance states across four Quartet samples of every variants
+- Check Mendelian inheritance states across four Quartet samples of every variants
 - Variant calling QC depended on Quartet genetic relationship of VCF files
 
 Quartet quality control analysis pipeline started from VCF files is implemented across three main procedures:
 
 - Variant calling QC depended on benchmark sets of VCF files
-- Check Mendelian ingeritance states across four Quartet samples of every variants
+- Check Mendelian inheritance states across four Quartet samples of every variants
 - Variant calling QC depended on Quartet genetic relationship of VCF files
 
 ![workflow](/assets/images/dna-workflow.png)

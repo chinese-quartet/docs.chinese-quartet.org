@@ -10,4 +10,4 @@ For proteomics, the quality assessment is started from expression profiles forma
 
 ## Metabolomics
 
-Quality Assessment of a Quartet metabolic profiling dataset is based on built-in biological differences of the samples, consistency with the reference dataset at relative quantitation levels. The three QC metrics, including Signal-to-Noise Ratio (SNR), Relative Correlation with eference Datasets (RC), and Recall of DAMs in Reference Datasets (Recall), to comprehensively assess the performance of metabolic profiles from 2 aspects: reproducibility and accuracy.
+Quality Assessment of a Quartet metabolic profiling dataset is based on built-in biological differences of the samples, consistency with the reference dataset at relative quantitation levels. The three QC metrics, including Signal-to-Noise Ratio (SNR), Relative Correlation with Reference Datasets (RC), and Recall of DAMs in Reference Datasets (Recall), to comprehensively assess the performance of metabolic profiles from 2 aspects: reproducibility and accuracy.
