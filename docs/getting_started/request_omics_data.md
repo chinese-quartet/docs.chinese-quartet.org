@@ -5,8 +5,11 @@ The Quartet Multi-omics reference materials and raw datasets are publicly availa
 ### 2. How to bulk download the omics data files with browser?
 
 - Filter and select your expected files
+
 - Add them into file cart
+
 - Go to file cart by clicking `Cart Files` button
+
 - Click `Download Files` to downloading all files in cart.
 
 <video width="100%" controls autoplay>
@@ -17,11 +20,20 @@ The Quartet Multi-omics reference materials and raw datasets are publicly availa
 ### 3. How to bulk download the omics data files with file transfer tool?
 
 - Download a metadata table from multi-omics data page.(such as genomics data in <a href="https://www.chinese-quartet.org/#/data/download/quartet-genomics" target="_blank">Multiomics Data -> Genomics Data</a>
+
 - Get the md5sum of files which you want to download from the metadata table.
+
 - Follow the following docs to download your expected files.
 
 #### 3.1 Download `file transfer tool - biominer-aget`
-Download biominer-aget binary from [BioMiner Aget for Linux](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_linux) or [BioMiner Aget for Mac](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_macosx) or [BioMiner Aget for Windows](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_windows)
+
+Click the link to download `BioMiner Aget`: 
+
+- [Linux (CentOS, Debian/Ubuntu or Others)](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_linux)
+
+- [Mac (Intel, not m1 & m2 version)](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_macosx)
+
+- [Windows](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_windows)
 
 Copy the biominer-aget_xxx binary into /usr/bin/biominer-aget_xxx or any other directory which in PATH variable.
 
