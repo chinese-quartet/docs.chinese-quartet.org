@@ -36,7 +36,7 @@ extra:
       link: https://github.com/chinese-quartet
       name: Chinese Quartet
   generator: false
-copyright: Copyright &copy; 2016 - 2022 Quartet Team
+copyright: Copyright &copy; 2016 - 2023 Quartet Team
 theme:
   custom_dir: docs/assets/overrides
   features:
@@ -89,7 +89,7 @@ nav:
   #    - 'Interactive Visualization': getting_started/interactive_visualization.md
   - 'Data & Pipelines':
     - Introduction: data_pipelines/intro.md
-    - Genomcis: 
+    - Genomics: 
       - 'Introduction': data_pipelines/genomics/intro.md
       - 'Metadata Template': data_pipelines/genomics/metadata_template.md
       - 'Omics Data Format': data_pipelines/genomics/omics_data_format.md

@@ -1,38 +1,83 @@
-### Data Policies
+### 1. Data Policies
 The Quartet Multi-omics reference materials and raw datasets are publicly available and accessible. Researchers are encouraged to access and analyze the datasets. The recipients of the Reference Materials are highly encouraged to share their data with Fudan University through the Quartet Data Portal in order for us to improve the reference datasets and to better serve the community.
 
-### How to download the omics data files?
+
+### 2. How to bulk download the omics data files with browser?
+
+- Filter and select your expected files
+- Add them into file cart
+- Go to file cart by clicking `Cart Files` button
+- Click `Download Files` to downloading all files in cart.
+
+<video width="100%" controls autoplay>
+    <source src="/assets/videos/cart2download.mov" type="video/mp4">
+</video>
+
+
+### 3. How to bulk download the omics data files with file transfer tool?
 
 - Download a metadata table from multi-omics data page.(such as genomics data in <a href="https://www.chinese-quartet.org/#/data/download/quartet-genomics" target="_blank">Multiomics Data -> Genomics Data</a>
 - Get the md5sum of files which you want to download from the metadata table.
 - Follow the following docs to download your expected files.
 
-#### Download `file transfer tool - biominer-aget`
-Download biominer-aget binary from [BioMiner Aget for Linux](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_linux) or [BioMiner Aget for Mac](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_macosx)
+#### 3.1 Download `file transfer tool - biominer-aget`
+Download biominer-aget binary from [BioMiner Aget for Linux](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_linux) or [BioMiner Aget for Mac](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_macosx) or [BioMiner Aget for Windows](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_windows)
 
-Copy the biominer-aget binary into /usr/bin/biominer-aget or any other directory which in PATH variable.
-
-#### Download a data file with biominer-aget
-e.g. you want to download the file with UUID `00006134-c655-4bbe-9144-0ee86da83902` or Hash (such as md5sum, sha128...) `b02ced3319ba35746e2436d67b04a42c` from the repository biominer.fudan-pgx, you can run the following command:
-
-```bash
-biominer-aget --guid biominer.fudan-pgx/00006134-c655-4bbe-9144-0ee86da83902 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
-
-## or
-
-biominer-aget --hash b02ced3319ba35746e2436d67b04a42c --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
-
-## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
-
-biominer-aget --hash b02ced3319ba35746e2436d67b04a42c --output-dir ~/Downloads/ --repo node
-```
+Copy the biominer-aget_xxx binary into /usr/bin/biominer-aget_xxx or any other directory which in PATH variable.
 
 !!!note Please note that
     1. The `chunk_size` and `concurrency` parameters are related with the download speed. **There may be tens or hundreds of times the difference, so it's worth taking some time to find the best one.**
     
-    2. The biominer-aget binary is not available for Windows.
+    2. The biominer-aget binary is not available for mac (arm, m1 & m2).
     
     3. Not each file can be found in all these repos, so you need to specify a repo name when you downloading expected file.
+
+#### 3.2 Download a data file with biominer-aget
+e.g. you want to download the file with UUID `0023a688-6569-44d7-a2cf-b031f4af8cdd` or Hash (such as md5sum, sha128...) `d4e50c8edbf5215fbe2afa1540f7c968` from the repository biominer.fudan-pgx, you can run the following command:
+
+##### For Mac (Intel) Users
+
+```bash
+biominer-aget_x86-64_macosx --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+
+## or
+
+biominer-aget_x86-64_macosx --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+
+## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
+
+biominer-aget_x86-64_macosx --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo node
+```
+
+##### For Linux Users
+
+```bash
+biominer-aget_x86-64_linux --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+
+## or
+
+biominer-aget_x86-64_linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+
+## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
+
+biominer-aget_x86-64_linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo node
+```
+
+##### For Windows Users
+
+If you download the biominer-aget_xxx binary into C://Users/xxx/Desktop, you can use the following command to download data file from QDP.
+
+```cmd
+cmd /c C:\Users\xxx\Desktop\biominer-aget_x86-64_windows --hash d4e50c8edbf5215fbe2afa1540f7c968 --repo gsa
+
+## or
+
+cmd /c C:\Users\xxx\Desktop\biominer-aget_x86-64_windows --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --repo gsa --chunk_size 1m --concurrency 1000
+
+## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
+
+cmd /c C:\Users\xxx\Desktop\biominer-aget_x86-64_windows --hash d4e50c8edbf5215fbe2afa1540f7c968 --repo node
+```
 
 ```bash
 $ biominer-aget --help
@@ -66,7 +111,7 @@ OPTIONS:
     -u, --username <username>          Username for the biominer-indexd api server [default: anonymous]
 ```
 
-### How do you know a file is stored at which repo?
+### 4. How do you know a file is stored at which repo?
 
 Please access [the BioMiner Indexd service](http://www.indexd.org/index) and query file by md5sum, filename, or other metadata.
 
@@ -76,13 +121,13 @@ In the picture, you can see the URLs field, it can tell you the file is stored a
 
 ![biominer-indexd](../assets/images/indexd.png)
 
-### Why BioMiner Indexd?
+### 5. Why BioMiner Indexd?
 
 We will release our data to multiple repos (such as [NODE](https://www.biosino.org/node/), [GSA](https://ngdc.cncb.ac.cn/gsa/), [SRA](https://www.ncbi.nlm.nih.gov/sra), [ENA](https://www.ebi.ac.uk/ena/browser/) etc.), for your convenience, we provide the BioMiner Indexd service for aggregating all these repos.
 
 BioMiner Indexd is a hash-based data indexing and tracking service providing globally unique identifiers.
 
-### What multi-omics data do we provide?
+### 6. What multi-omics data do we provide?
 
 #### Genomics
 
