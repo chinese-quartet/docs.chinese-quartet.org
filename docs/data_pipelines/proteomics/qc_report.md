@@ -1,4 +1,9 @@
-## From Quantified Expression Profiles to QC Report
+From Quantified Expression Profiles to QC Report
+
+!!! note 
+    You can find the source code on [chinese-quartet/quartet-protqc-report](https://github.com/chinese-quartet/quartet-protqc-report.git)
+
+## Prepare data & metadata files
 
 ### Data File
 
@@ -16,7 +21,30 @@ A screenshot of a sample metadata table is shown below.
 
 ![Proteomics Sample Metdata](../../assets/images/proteomics-sample-metadata.png){ width="50%" }
 
-### Step by Step
+## Step by Step Guide
+
+### Analyze your data on your own server
+
+1. Pull docker container 
+
+    More versions on [Docker Registry](https://github.com/chinese-quartet/quartet-protqc-report/pkgs/container/quartet-protqc-report)
+
+    ```
+    docker pull ghcr.io/chinese-quartet/quartet-protqc-report:v0.2.2-27439957
+    ```
+
+2. Run quartet-protqc-report with docker image
+
+    Assuming that your data file is named `data.csv` and metadata file is named `metadata.csv` and all files are placed in `/your-dir` directory.
+
+    ```
+    docker run -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-protqc-report:v0.2.2-27439957 -d /data/data.csv -m /data/metadata.csv -o /data
+    ```
+
+3. Find your QC report in `/your-dir/multiqc_report.html`
+
+### Analyze your data on Quartet Data Portal
+
 As for running the QC pipeline of proteomics data, you can:
 
 1) go to [http://chinese-quartet.org/#/seq-flow/protqc-report-management](http://chinese-quartet.org/#/seq-flow/protqc-report-management);
@@ -44,7 +72,3 @@ The package protqc output Quality Control(QC) results of proteomics data for Qua
 5. ***Signal-to-Noise Ratio (SNR)***: SNR is established to characterize the ability of a platform or lab or batch, which is able to distinguish intrinsic differences among distinct biological sample groups (“signal”) from variations in technical replicates of the same sample group ("noise").
 
 6. ***Relative Correlation with Reference Datasets (RC)***: RC is used for assessment of quantitative consistency with the reference dataset at relative levels. For shotgun proteomics, quantitation at peptide levels is theoretically more reliable. Therefore, the reference dataset is established by benchmarking the relative expression values (log2FCs), for each peptide sequence of each sample pair (D5/D6, F7/D6, M8/D6), in historical datasets at peptide levels. We calculate relatively qualified (satisfied with thresholds of p < 0.05) log2FCs of the queried data, for overlapped peptides with the reference dataset, as the input for the assessment of quantitative consistency. Then RC value is Pearson correlation coefficient between the test dataset and the reference dataset.
-
-### Open source?
-
-If you want to generate the QC report on your local machine, please access the [GitHub repo](https://github.com/chinese-quartet/quartet-protqc-report) and [README](https://github.com/chinese-quartet/quartet-protqc-report/blob/master/protqc/README.md)
