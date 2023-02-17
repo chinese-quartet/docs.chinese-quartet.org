@@ -33,7 +33,7 @@ A screenshot of a sample metadata table is shown below.
 
 ### Analyze your data on your own server
 
-1. Pull docker container 
+1. Pull docker image 
 
     More versions on [Docker Registry](https://github.com/chinese-quartet/quartet-metqc-report/pkgs/container/quartet-metqc-report)
 
@@ -65,3 +65,5 @@ As for running the QC pipeline of metabolomics data, you can:
 4) click "Step 2: Upload Files (s)", please upload your data and metadata files (.csv). 
 
 5) click "Step 3: Parameters & Submit", please fill in the blanks and submit the job.
+
+See more details on [Step by Step Guide](../../getting_started/step_by_step_guide_metabolite.md)
