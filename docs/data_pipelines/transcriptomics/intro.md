@@ -38,19 +38,19 @@ Assuming your data files are in the /your-dir directory.
     More versions on [Docker Registry](https://github.com/chinese-quartet/quartet-rseqc-report/pkgs/container/quartet-rseqc-report)
 
     ```
-    docker pull ghcr.io/chinese-quartet/quartet-rseqc-report:v0.2.2-27439957
+    docker pull ghcr.io/chinese-quartet/quartet-rseqc-report:v0.2.3-31f4ef89
     ```
 
 4. Generate qc result files by workflow command
 
     ```
-    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-rseqc-report:latest workflow -i /data/hisat2 -g /data/gtf/gencode.v36.annotation.gtf -s /data/fastq_screen/fastq_screen.conf --output-dir /data/results --r1 /data/raw-data/example_R1.fq.gz --r2 /data/raw-data/example_R2.fq.gz
+    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-rseqc-report:v0.2.3-31f4ef89 workflow -i /data/hisat2 -g /data/gtf/gencode.v36.annotation.gtf -s /data/fastq_screen/fastq_screen.conf --output-dir /data/results --r1 /data/raw-data/example_R1.fq.gz --r2 /data/raw-data/example_R2.fq.gz
     ```
 
 5. Report the results
 
     ```
-    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-rseqc-report:latest report -d /data/results -m /data/metadata.csv --output-dir /data/report
+    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-rseqc-report:v0.2.3-31f4ef89 report -d /data/results -m /data/metadata.csv --output-dir /data/report
     ```
 
 6. Find your QC report in `/your-dir/multiqc_report.html`
