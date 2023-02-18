@@ -21,14 +21,16 @@ Assuming your data files are in the /your-dir directory.
 1. Download the dependency files
 
     ```
-    # 1. Download reference genomes for `fastq_screen`
-    wget xxx -O /your-dir/fastq_screen
+    # 1. Download reference genomes for `fastq_screen` (More details on https://figshare.com/articles/online_resource/fastq_screen_zip/22121078)
+    wget https://figshare.com/ndownloader/files/39310673 -O /your-dir/fastq_screen/fastq_screen.zip
+    unzip /your-dir/fastq_screen/fastq_screen.zip -d /your-dir/fastq_screen
 
-    # 2. Download GTF file
-    wget xxx -O /your-dir/gtf/gencode.v36.annotation.gtf
+    # 2. Download GTF file (More details on https://figshare.com/articles/online_resource/Homo_sapiens_GRCh38_93_gtf/22117475)
+    wget https://figshare.com/ndownloader/files/39308702 -O /your-dir/gtf/Homo_sapiens.GRCh38.93.gtf
 
-    # 3. Download Hisat2 index files
-    wget xxx -O /your-dir/hisat2
+    # 3. Download Hisat2 index files (More details on https://figshare.com/articles/online_resource/hisat2_zip/22120538)
+    wget https://figshare.com/ndownloader/files/39310418 -O /your-dir/hisat2/hisat2.zip
+    unzip /your-dir/hisat2/hisat2.zip -d /your-dir/hisat2
     ```
 
 2. Place your data files into `/your-dir/raw-data` directory
