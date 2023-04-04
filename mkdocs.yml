@@ -93,7 +93,8 @@ nav:
       - 'Introduction': data_pipelines/genomics/intro.md
       - 'Metadata Template': data_pipelines/genomics/metadata_template.md
       - 'Omics Data Format': data_pipelines/genomics/omics_data_format.md
-      - 'Analysis Pipeline': data_pipelines/genomics/analysis_pipeline.md
+      - 'Analysis Pipeline for WGS': data_pipelines/genomics/analysis_pipeline_wgs.md
+      - 'Analysis Pipeline for WES': data_pipelines/genomics/analysis_pipeline_wes.md
       # - 'QC Report': data_pipelines/genomics/qc_report.md
     - Transcriptomics:
       - 'Introduction': data_pipelines/transcriptomics/intro.md

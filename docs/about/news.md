@@ -1,3 +1,23 @@
+## Mar 4, 2023
+
+- **Documentation Improvement**
+    - Add a document for the local version of DNA-seq qc report.
+
+- **Release docker images**
+    - [quartet-dnaqc-report](https://github.com/chinese-quartet/quartet-dseqc-report)
+
+## Feb 17, 2023
+
+- **Documentation Improvement**
+    - Add a document for the local version of Proteomics qc report.
+    - Add a document for the local version of Metabolomics qc report.
+    - Add a document for the local version of RNA-seq qc report.
+
+- **Release docker images**
+    - [quartet-rseqc-report](https://github.com/chinese-quartet/quartet-rseqc-report)
+    - [quartet-protqc-report](https://github.com/chinese-quartet/quartet-protqc-report)
+    - [quartet-metqc-report](https://github.com/chinese-quartet/quartet-metqc-report)
+
 ## Oct 8, 2022
 
 - **Documentation Improvement**
