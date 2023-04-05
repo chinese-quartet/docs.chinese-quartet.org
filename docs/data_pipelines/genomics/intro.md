@@ -41,9 +41,13 @@ Assuming your data files are in the /your-dir directory.
 
 1. Download the dependency files
 
-    Comming soon...
-    
-    (The dependency files are large, we're trying to find a convenient way to share with you.)
+    ```
+    wget https://zenodo.org/record/7800049/files/quartet-dseqc-report-reference-data-v20230404.zip?download=1
+
+    unzip quartet-dseqc-report-reference-data-v20230404.zip
+
+    # You need to place the reference files into /your-dir/references directory
+    ```
 
 2. Place your data files into `/your-dir/raw-data` directory
 
