@@ -56,7 +56,7 @@ Assuming your data files are in the /your-dir directory.
     More versions on [Docker Registry](https://github.com/chinese-quartet/quartet-rseqc-report/pkgs/container/quartet-dseqc-report)
 
     ```
-    docker pull ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-fc1077eb
+    docker pull ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-7a49aa4a
     ```
 
 4. Generate qc result files by workflow command
@@ -70,7 +70,7 @@ Assuming your data files are in the /your-dir directory.
     ### 4. The pipeline depends on Sentieon software, you need to specify -S to set the license server.
     ### 5. The output directory is /your-dir/results
 
-    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-fc1077eb fq-workflow --d5-r1 /data/raw-data/d5.R1.gz --d5-r2 /data/raw-data/d5.R2.gz --d6-r1 /data/raw-data/d6.R1.gz --d6-r2 /data/raw-data/d6.R2.gz --f7-r1 /data/raw-data/f7.R1.gz --f7-r2 /data/raw-data/f7.R2.gz --m8-r1 /data/raw-data/m8.R1.gz --m8-r2 /data/raw-data/m8.R2.gz -p BGI -B /data/references/reference_datasets_v202103 -R /data/references/GRCh38.d1.vd1 -F /data/references/fastq_screen_reference -S 192.168.1.1:8990 --output-dir /data/results
+    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-7a49aa4a fq-workflow --d5-r1 /data/raw-data/d5.R1.gz --d5-r2 /data/raw-data/d5.R2.gz --d6-r1 /data/raw-data/d6.R1.gz --d6-r2 /data/raw-data/d6.R2.gz --f7-r1 /data/raw-data/f7.R1.gz --f7-r2 /data/raw-data/f7.R2.gz --m8-r1 /data/raw-data/m8.R1.gz --m8-r2 /data/raw-data/m8.R2.gz -p BGI -B /data/references/reference_datasets_v202103 -R /data/references/GRCh38.d1.vd1 -F /data/references/fastq_screen_reference -S 192.168.1.1:8990 --output-dir /data/results
 
     # For WES Fastq data
     ## Assume the following conditions:
@@ -81,13 +81,13 @@ Assuming your data files are in the /your-dir directory.
     ### 5. You need to prepare your bed file and set -b option.
     ### 6. The output directory is /your-dir/results
 
-    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-fc1077eb fq-workflow --d5-r1 /data/raw-data/d5.R1.gz --d5-r2 /data/raw-data/d5.R2.gz --d6-r1 /data/raw-data/d6.R1.gz --d6-r2 /data/raw-data/d6.R2.gz --f7-r1 /data/raw-data/f7.R1.gz --f7-r2 /data/raw-data/f7.R2.gz --m8-r1 /data/raw-data/m8.R1.gz --m8-r2 /data/raw-data/m8.R2.gz -p BGI -B /data/references/reference_datasets_v202103 -R /data/references/GRCh38.d1.vd1 -F /data/references/fastq_screen_reference -S 192.168.1.1:8990 --bed-file /data/references/your-bed-file --output-dir /data/results
+    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-7a49aa4a fq-workflow --d5-r1 /data/raw-data/d5.R1.gz --d5-r2 /data/raw-data/d5.R2.gz --d6-r1 /data/raw-data/d6.R1.gz --d6-r2 /data/raw-data/d6.R2.gz --f7-r1 /data/raw-data/f7.R1.gz --f7-r2 /data/raw-data/f7.R2.gz --m8-r1 /data/raw-data/m8.R1.gz --m8-r2 /data/raw-data/m8.R2.gz -p BGI -B /data/references/reference_datasets_v202103 -R /data/references/GRCh38.d1.vd1 -F /data/references/fastq_screen_reference -S 192.168.1.1:8990 --bed-file /data/references/your-bed-file --output-dir /data/results
     ```
 
 5. Report the results
 
     ```
-    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-fc1077eb report -d /data/results --output-dir /data/report
+    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-7a49aa4a report -d /data/results --output-dir /data/report
     ```
 
 6. Find your QC report in `/your-dir/report/multiqc_report.html`
@@ -119,7 +119,7 @@ Assuming your data files are in the /your-dir directory.
     More versions on [Docker Registry](https://github.com/chinese-quartet/quartet-rseqc-report/pkgs/container/quartet-dseqc-report)
 
     ```
-    docker pull ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-fc1077eb
+    docker pull ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-7a49aa4a
     ```
 
 4. Generate qc result files by workflow command
@@ -131,7 +131,7 @@ Assuming your data files are in the /your-dir directory.
     ### 2. If your data is produced by BGI sequencing platform, you can use -p BGI to set the platform. otherwise -p ILLUMINA
     ### 3. The output directory is /your-dir/results
 
-    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-fc1077eb vcf-workflow --vcf-d5 /data/raw-data/d5.vcf --vcf-d6 /data/raw-data/d6.vcf --vcf-f7 /data/raw-data/f7.vcf --vcf-m8 /data/raw-data/m8.vcf -p BGI -B /data/references/reference_datasets_v202103 -R /data/references/GRCh38.d1.vd1 --output-dir /data/results
+    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-7a49aa4a vcf-workflow --vcf-d5 /data/raw-data/d5.vcf --vcf-d6 /data/raw-data/d6.vcf --vcf-f7 /data/raw-data/f7.vcf --vcf-m8 /data/raw-data/m8.vcf -p BGI -B /data/references/reference_datasets_v202103 -R /data/references/GRCh38.d1.vd1 --output-dir /data/results
 
     # For WES data
     ## Assume the following conditions:
@@ -140,13 +140,13 @@ Assuming your data files are in the /your-dir directory.
     ### 3. You need to prepare your bed file and set -b option.
     ### 4. The output directory is /your-dir/results
 
-    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-fc1077eb vcf-workflow --vcf-d5 /data/raw-data/d5.vcf --vcf-d6 /data/raw-data/d6.vcf --vcf-f7 /data/raw-data/f7.vcf --vcf-m8 /data/raw-data/m8.vcf -p BGI -B /data/references/reference_datasets_v202103 -R /data/references/GRCh38.d1.vd1 --bed-file /data/references/your-bed-file --output-dir /data/results
+    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-7a49aa4a vcf-workflow --vcf-d5 /data/raw-data/d5.vcf --vcf-d6 /data/raw-data/d6.vcf --vcf-f7 /data/raw-data/f7.vcf --vcf-m8 /data/raw-data/m8.vcf -p BGI -B /data/references/reference_datasets_v202103 -R /data/references/GRCh38.d1.vd1 --bed-file /data/references/your-bed-file --output-dir /data/results
     ```
 
 5. Report the results
 
     ```
-    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-fc1077eb report -d /data/results --output-dir /data/report
+    docker run -d -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-dseqc-report:v0.2.3-7a49aa4a report -d /data/results --output-dir /data/report
 
     # Known issue:
     # Only support one uuid directory in /your-dir/results directory.
