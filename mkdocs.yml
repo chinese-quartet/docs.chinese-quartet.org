@@ -141,3 +141,8 @@ nav:
     - FAQs: about/faqs.md
   # - Developers:
   #   - News: developers/changelog.md
+  - Policies:
+    - 'Account Registration Policy': policies/account_registration_policy.md
+    - 'Reference Materials Policy': policies/reference_materials_policy.md
+    - 'Data Request Policy': policies/data_request_policy.md
+    - 'Data Submission Policy': policies/data_submission_policy.md

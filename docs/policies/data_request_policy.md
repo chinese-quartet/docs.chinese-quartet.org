@@ -1,0 +1,3 @@
+If you want to get all of data which are published on the platform, you don't need to register an account. Only need to access the [download page](https://www.chinese-quartet.org/#/data/download), choose the data you want and download the metadata table which contains the md5sum of each data file. Then you can use the md5sum to download the data from the related data repositories. You can follow the [tutorial](https://docs.chinese-quartet.org/getting_started/request_omics_data/) to download the data. Or you can download the related data by clicking the download button on the data page.
+
+- All data are free for all users for academic use. If you want to use the data for commercial purposes, please contact [the administrator](mailto:quartet@fudan.edu.cn).
