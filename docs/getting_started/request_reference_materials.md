@@ -2,4 +2,4 @@ If you want to request reference materials, you can access the [Quartet Data Por
 
 ![Request reference materials](../assets/images/request_reference_materials.png)
 
-More details on the reference materails policy can be found in [the following documents](../policies/reference_materials_policy.md).
+More details on the reference materails policy can be found in [the document](../policies/reference_materials_policy.md).

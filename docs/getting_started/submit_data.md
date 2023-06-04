@@ -2,7 +2,7 @@
 
 The Quartet Multi-omics reference materials and raw datasets are publicly available and accessible. Researchers are encouraged to access and analyze the datasets. The recipients of the Reference Materials are highly encouraged to share their data with Fudan University through Public data warehouse (Recommended, such as SRA, ENA, GSA etc.) or the Quartet Data Portal (for analyzing your data online) in order for us to improve the reference datasets and to better serve the community.
 
-More details on the policy can be found in [the following documents](../policies/data_submission_policy.md).
+More details on the policy can be found in [the document](../policies/data_submission_policy.md).
 
 ## How to upload and analyze your data?
 
