@@ -1,10 +1,14 @@
-## How to upload your data?
+## Data submission policy
 
-The Quartet Multi-omics reference materials and raw datasets are publicly available and accessible. Researchers are encouraged to access and analyze the datasets. The recipients of the Reference Materials are highly encouraged to share their data with Fudan University through the Quartet Data Portal in order for us to improve the reference datasets and to better serve the community.
+The Quartet Multi-omics reference materials and raw datasets are publicly available and accessible. Researchers are encouraged to access and analyze the datasets. The recipients of the Reference Materials are highly encouraged to share their data with Fudan University through Public data warehouse (Recommended, such as SRA, ENA, GSA etc.) or the Quartet Data Portal (for analyzing your data online) in order for us to improve the reference datasets and to better serve the community.
 
-Users can upload their in-house omics data generated with the Quartet reference sample, select the specific pipeline and parameters, and obtain the analysis results and QC results, which can be managed by the Quartet Data Portal.
+More details on the policy can be found in [the following documents](../policies/data_submission_policy.md).
 
-Users should follow the steps:
+## How to upload and analyze your data?
+
+For convenience, we provide a web-based data analysis platform for users to analyze their data. Users can upload their in-house omics data generated with the Quartet reference sample, select the specific pipeline and parameters, and obtain the analysis results and QC results, which can be managed by the Quartet Data Portal.
+
+So if you only want to analyze your data with Quartet pipelines online, you can upload your data to the Quartet Data Portal. Please follow the steps:
 
 1) Create a dataset by clicking the 'Register & Upload Your Data'
 
@@ -16,7 +20,7 @@ Users should follow the steps:
 
 5) Verify and confirm Uploaded files by clicking 'Check' button
 
-After you checking your data, the Quartet team will receive an email notification. And then, we will review your uploaded files and publish these data into Quartet Data Portal.
+After you checking your data, you can choose the pipeline and parameters to analyze your data.
 
 ### Tools for uploading data
 

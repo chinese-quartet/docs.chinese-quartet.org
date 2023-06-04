@@ -1,6 +1,8 @@
 ### 1. Data Policies
 The Quartet Multi-omics reference materials and raw datasets are publicly available and accessible. Researchers are encouraged to access and analyze the datasets. The recipients of the Reference Materials are highly encouraged to share their data with Fudan University through the Quartet Data Portal in order for us to improve the reference datasets and to better serve the community.
 
+More details on the data policies can be found in [the following documents](../policies/data_request_policy.md).
+
 
 ### 2. How to bulk download the omics data files with browser?
 

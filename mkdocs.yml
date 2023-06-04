@@ -1,12 +1,12 @@
 # Please access https://squidfunk.github.io/mkdocs-material for more details.
 site_name: Quartet Data Portal Docs
-site_description: 'Quality Control and Data Integration of Multi-omics Profiling'
-site_author: 'Jingcheng Yang'
-announce: 'Quartet Team'
+site_description: "Quality Control and Data Integration of Multi-omics Profiling"
+site_author: "Jingcheng Yang"
+announce: "Quartet Team"
 announce_text: 'a development version has been released on <a href="https://dev.chinese-quartet.org" target="_blank">https://dev.chinese-quartet.org</a>'
 docs_dir: docs/
-repo_name: 'chinese-quartet'
-repo_url: 'https://github.com/chinese-quartet'
+repo_name: "chinese-quartet"
+repo_url: "https://github.com/chinese-quartet"
 edit_uri: docs.chinese-quartet.org/edit/master/docs/
 markdown_extensions:
   - meta
@@ -49,75 +49,75 @@ theme:
     - search.share
   logo: assets/images/logo.png
   icon:
-      repo: fontawesome/brands/github
+    repo: fontawesome/brands/github
   favicon: assets/images/logo.png
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: blue
     - scheme: slate
       toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to light mode
-  name: 'material'
+      icon: material/toggle-switch-off-outline
+      name: Switch to light mode
+  name: "material"
 
 # Table of contents
 nav:
   - Home: index.md
-  - 'Getting Started':
-    - Overview: getting_started/introduction.md
-    - 'Step by Step':
-      - 'Quality Assessment for WGS': getting_started/step_by_step_guide_dna.md
-      - 'Quality Assessment for Transcriptomics': getting_started/step_by_step_guide_rna.md
-      - 'Quality Assessment for Proteomics': getting_started/step_by_step_guide_protein.md
-      - 'Quality Assessment for Metabolomics': getting_started/step_by_step_guide_metabolite.md
-  #  - Toolbars: getting_started/toolbars.md
-    - 'Register Account': getting_started/register_account.md
-    - 'Request Reference Materials': getting_started/request_reference_materials.md
-    - 'Access Quartet MultiOmics Data': getting_started/request_omics_data.md
-    - 'Submit Your Raw Omics Data': getting_started/submit_data.md
-  #  - 'Analyze Your Data':
-  #    - 'Quality Assessment Page': getting_started/quality_assessment_page.md
-  #    - 'Submit Data': getting_started/submit_data.md
-  #    - 'Select Pipeline': getting_started/select_pipeline.md
-  #    - 'Generate QC Report': getting_started/qc_report.md
-  #    - 'Analysis History': getting_started/analysis_history.md
-  #  - 'Explore Reference Datasets':
-  #    - 'Browser and Download': getting_started/browser_and_download.md
-  #    - 'Interactive Visualization': getting_started/interactive_visualization.md
-  - 'Data & Pipelines':
-    - Introduction: data_pipelines/intro.md
-    - Genomics: 
-      - 'Introduction': data_pipelines/genomics/intro.md
-      - 'Metadata Template': data_pipelines/genomics/metadata_template.md
-      - 'Omics Data Format': data_pipelines/genomics/omics_data_format.md
-      - 'Analysis Pipeline for WGS': data_pipelines/genomics/analysis_pipeline_wgs.md
-      - 'Analysis Pipeline for WES': data_pipelines/genomics/analysis_pipeline_wes.md
-      # - 'QC Report': data_pipelines/genomics/qc_report.md
-    - Transcriptomics:
-      - 'Introduction': data_pipelines/transcriptomics/intro.md
-      - 'Metadata Template': data_pipelines/transcriptomics/metadata_template.md
-      - 'Omics Data Format': data_pipelines/transcriptomics/omics_data_format.md
-      - 'Analysis Pipeline': data_pipelines/transcriptomics/analysis_pipeline.md
-      - 'QC Report': data_pipelines/transcriptomics/qc_report.md
-    - Proteomics:
-      # - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
-      # - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
-      # - 'Analysis Pipeline': data_pipelines/proteomics/analysis_pipeline.md
-      - 'QC Report': data_pipelines/proteomics/qc_report.md
-    - Metabolomics:
-      - 'Introduction': data_pipelines/metabolomics/intro.md
-      - 'Metadata Template': data_pipelines/metabolomics/metadata_template.md
-      # - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
-      # - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
-      - 'QC Report': data_pipelines/metabolomics/qc_report.md
-  - Tools: 
-    # - 'Data Repo': tools/data_repo.md
-    - 'Data Transfer Tools':
-      - 'OSSUtil': tools/ossutil.md
-      - 'OSSBrowser': tools/ossbrowser.md
+  - "Getting Started":
+      - Overview: getting_started/introduction.md
+      - "Step by Step":
+          - "Quality Assessment for WGS": getting_started/step_by_step_guide_dna.md
+          - "Quality Assessment for Transcriptomics": getting_started/step_by_step_guide_rna.md
+          - "Quality Assessment for Proteomics": getting_started/step_by_step_guide_protein.md
+          - "Quality Assessment for Metabolomics": getting_started/step_by_step_guide_metabolite.md
+      #  - Toolbars: getting_started/toolbars.md
+      - "Register Account": getting_started/register_account.md
+      - "Request Reference Materials": getting_started/request_reference_materials.md
+      - "Access Quartet MultiOmics Data": getting_started/request_omics_data.md
+      - "Submit Your Raw Omics Data": getting_started/submit_data.md
+  # - 'Analyze Your Data':
+  #   - 'Quality Assessment Page': getting_started/quality_assessment_page.md
+  #   - 'Submit Data': getting_started/submit_data.md
+  #   - 'Select Pipeline': getting_started/select_pipeline.md
+  #   - 'Generate QC Report': getting_started/qc_report.md
+  #   - 'Analysis History': getting_started/analysis_history.md
+  # - 'Explore Reference Datasets':
+  #   - 'Browser and Download': getting_started/browser_and_download.md
+  #   - 'Interactive Visualization': getting_started/interactive_visualization.md
+  - "Data & Pipelines":
+      - Introduction: data_pipelines/intro.md
+      - Genomics:
+          - "Introduction": data_pipelines/genomics/intro.md
+          - "Metadata Template": data_pipelines/genomics/metadata_template.md
+          - "Omics Data Format": data_pipelines/genomics/omics_data_format.md
+          - "Analysis Pipeline for WGS": data_pipelines/genomics/analysis_pipeline_wgs.md
+          - "Analysis Pipeline for WES": data_pipelines/genomics/analysis_pipeline_wes.md
+          # - 'QC Report': data_pipelines/genomics/qc_report.md
+      - Transcriptomics:
+          - "Introduction": data_pipelines/transcriptomics/intro.md
+          - "Metadata Template": data_pipelines/transcriptomics/metadata_template.md
+          - "Omics Data Format": data_pipelines/transcriptomics/omics_data_format.md
+          - "Analysis Pipeline": data_pipelines/transcriptomics/analysis_pipeline.md
+          - "QC Report": data_pipelines/transcriptomics/qc_report.md
+      - Proteomics:
+          # - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
+          # - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
+          # - 'Analysis Pipeline': data_pipelines/proteomics/analysis_pipeline.md
+          - "QC Report": data_pipelines/proteomics/qc_report.md
+      - Metabolomics:
+          - "Introduction": data_pipelines/metabolomics/intro.md
+          - "Metadata Template": data_pipelines/metabolomics/metadata_template.md
+          # - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
+          # - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
+          - "QC Report": data_pipelines/metabolomics/qc_report.md
+  - Tools:
+      # - 'Data Repo': tools/data_repo.md
+      - "Data Transfer Tools":
+          - "OSSUtil": tools/ossutil.md
+          - "OSSBrowser": tools/ossbrowser.md
   #  - 'Data Analysis Tools':
   #    - 'Choppy App': tools/choppy_apps.md
   #    - 'MultiReport': tools/multireport.md
@@ -132,17 +132,17 @@ nav:
   #  - Proteomics: roadmap/proteomics.md
   #  - Metabolomics: roadmap/metabolomics.md
   #  - Others: roadmap/others.md
+  - Policies:
+      - "Account Registration Policy": policies/account_registration_policy.md
+      - "Reference Materials Policy": policies/reference_materials_policy.md
+      - "Data Request Policy": policies/data_request_policy.md
+      - "Data Submission Policy": policies/data_submission_policy.md
   - About:
-    - News: about/news.md
-    - Publications: about/publications.md
-  #  - Quartet Team: about/members.md
-  #  - Collaborators: about/collaborators.md
-  #  - Policies: about/policies.md
-    - FAQs: about/faqs.md
+      - News: about/news.md
+      - Publications: about/publications.md
+      #  - Quartet Team: about/members.md
+      #  - Collaborators: about/collaborators.md
+      #  - Policies: about/policies.md
+      - FAQs: about/faqs.md
   # - Developers:
   #   - News: developers/changelog.md
-  - Policies:
-    - 'Account Registration Policy': policies/account_registration_policy.md
-    - 'Reference Materials Policy': policies/reference_materials_policy.md
-    - 'Data Request Policy': policies/data_request_policy.md
-    - 'Data Submission Policy': policies/data_submission_policy.md
