@@ -1,3 +1,8 @@
+## June 3, 2023
+
+- **Documentation Improvement**
+    - Add more details about the policies (data request, data submission, account registration, reference materials).
+
 ## Mar 4, 2023
 
 - **Documentation Improvement**
