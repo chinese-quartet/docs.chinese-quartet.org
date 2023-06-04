@@ -1,6 +1,6 @@
 ## Policy for account registration
 
-If you want to upload your data to the platform and use the pipelines in the platform to analyze your data, you need to register an account. Otherwise, you can access the Quartet Data Portal as a guest (suc as [reference materials](https://chinese-quartet.org/#/materials), [omics data](https://www.chinese-quartet.org/#/data/download) and other funtions).
+If you want to upload your data to the platform and use the pipelines in the platform to analyze your data, you need to register an account. Otherwise, you can access the Quartet Data Portal as a guest (such as [reference materials](https://chinese-quartet.org/#/materials), [omics data](https://www.chinese-quartet.org/#/data/download) and other funtions).
 
 More details on the policy can be found in [the following documents](../policies/account_registration_policy.md)
 
