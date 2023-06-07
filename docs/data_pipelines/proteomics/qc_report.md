@@ -7,19 +7,17 @@ From Quantified Expression Profiles to QC Report
 
 ### Data File
 
-The data file contains gene symbols of each protein and its quantitated expression level in each sample (replicate), and the missing values are allowed. The required file format has samples in columns and a column named "rowname". 
+The data file provides the quantified proteins that are mapped to gene symbols and quantified peptide sequences, and the missing values are allowed. The required file format has the columns named *Type* and *Feature*. If the type of features is **Gene Symbol** only, then the metric ***Relative Correlation with Reference Datasets (RC)*** will not be calculated.
 
-A screenshot of a sample data table is shown below.
-
-![Proteomics Sample Data](../../assets/images/proteomics-sample-data.png){ width="70%" }
+Please see the example of the required data file as follows.
+- [Data Template](../../assets/templates/proteomics_pipeline_data_template.csv)
 
 ### Metadata File
 
-The metadata file has the information of each sample in the data file. With columns named "name", "sample" (D5, D6, F7 and M8 for Quartet samples). Remember that the column "name" and column names of the data file table must be in one-to-one correspondence. 
+The metadata file has the information of each sample ID in the data file. With columns named "library", "sample" (D5, D6, F7 and M8 for Quartet samples). Remember that the column "library" and column names of the data file table must be in one-to-one correspondence. 
 
-A screenshot of a sample metadata table is shown below.
-
-![Proteomics Sample Metdata](../../assets/images/proteomics-sample-metadata.png){ width="50%" }
+Please see the example of the required data file as follows.
+- [Metadata Template](../../assets/images/proteomics_pipeline_meta_template.csv)
 
 ## Step by Step Guide
 
@@ -63,7 +61,7 @@ See more details on [Step by Step Guide](../../getting_started/step_by_step_guid
 
 The package protqc output Quality Control(QC) results of proteomics data for Quartet Project. The QC pipeline starts from the expression profiles at peptide/protein levels, and enables to calculate 6 metrics. A Total score is the geometric mean of the linearly normalized values of these metrics.
 
-1. ***Number of features***: We expect as many proteins (mapped to gene symbols) as possible for downstreaming analyses.
+1. ***Number of features***: We expect as many proteins (mapped to gene symbols) as possible for downstreaming analyses. Identified proteins were filtered by the rule of 5% FDR. However, if you set stricter rules (e.g., 1% FDR), less number but high confidence of proteins will be retained (then your data may rank relatively low in terms of *Number of features*).
 
 2. ***Missing percentage (%)***: Too many missing values interfere with comparability. This metric is calculated globally.
 
