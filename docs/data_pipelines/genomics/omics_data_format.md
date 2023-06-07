@@ -10,14 +10,14 @@ We suggest to standardize the file names of updated data files as follows:
 
 **Quartet_Omics_SequencePlatform_SequenceMachine_LibraryPrep_SequenceSite_Sample_Replicate_Date_R1/R2.fastq/fq.gz**
 
-1. Omics
+(1) Omics
 
 | Omics type  | Character |
 | :---------- | :-------- |
 | DNA WGS     | WGS       |
 | DNA WES     | WES       |
 
-2. SequencePlatform
+(2) SequencePlatform
 
 | Platform    | Character |
 | :---------- | :-------- |
@@ -28,7 +28,7 @@ We suggest to standardize the file names of updated data files as follows:
 
 Please note that the tables provides examples of commonly used representative sequencing platforms, rather than an exhaustive compilation of all exiting sequencing platforms. If you use sequencing platforms not listed in the table, please use 2 to 6 letters as abbreviations to represent the sequencing platforms.
 
-3. SequenceMachine
+(3) SequenceMachine
 
 | Platform    | Machine       | Character  |
 |:----------- | :-------------| :----------|
@@ -47,18 +47,18 @@ Please note that the tables provides examples of commonly used representative se
 
 Please note that the tables provides examples of commonly used representative sequencing machines, rather than an exhaustive compilation of all exiting sequencing machines. If you use sequencing platforms not listed in the table, please use 2 to 6 letters as abbreviations to represent the sequencing machines.
 
-4. LibraryPrep
+(4) LibraryPrep
 
 | LibraryPrep | Character     |
 |:----------- | :-------------|
 | PCR         | PCR           |
 | PCR-free    | PCRfree       |
 
-5. SequenceSite
+(5) SequenceSite
 
 Please use a few uppercase letters as abbreviations to represent the sequence centers or labs. For example, Fudan to FD.
 
-6. Sample
+(6) Sample
 
 | Sample      | Character |
 | :---------- | :-------- |
@@ -67,10 +67,10 @@ Please use a few uppercase letters as abbreviations to represent the sequence ce
 | Quartet-F7  | F7        |
 | Quartet-M8  | M8        |
 
-7. Replicate
+(7) Replicate
 If you sequenced multiple replicates for the same reference material, use numbers such as 1, 2, 3, ... to represent technical replicates.
 
-8. Date
+(8) Date
 The format of Date is yyyymmdd. For example, June 25, 2023 shoud be written to 20230625.
 
 Here are some examples of file names:
