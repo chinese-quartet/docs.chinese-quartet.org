@@ -59,3 +59,22 @@ INFO     -  [09:30:55] Serving on http://127.0.0.1:8000/
 ```
 
 After that, you can visit the website at `http://127.0.0.1:8000/`. Then you can edit the markdown files and see the changes in real time.
+
+### Modify Docs
+
+Modify the markdown files in the `docs` folder. If you want to modify the table of contents, please modify the `mkdocs.yml` file.
+
+You can follow the [MkDocs](https://squidfunk.github.io/mkdocs-material/) documentation to learn more.
+
+### Publish Docs Website
+
+If you want to submit your changes, please push your changes to your own branch and create a pull request.
+
+```
+git checkout -b <Your Branch Name>
+git add -u
+git commit -m "<Your Message>"
+git push origin <Your Branch Name>
+```
+
+After merging the pull request, the docs website will be automatically published to [https://docs.chinese-quartet.org](https://docs.chinese-quartet.org).
