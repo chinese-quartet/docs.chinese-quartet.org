@@ -15,7 +15,9 @@ Here are some examples of file names:
 ```
 Fastq read 1: Quartet_WGS_ILM_Nova_PCRfree_FD_D5_1_20230635_R1.fq.gz
 
-Fastq read 2: Quartet_WGS_ILM_Nova_PCRfree_FD_D5_2_20230635_R2.fq.gz
+Fastq read 2: Quartet_WGS_ILM_Nova_PCRfree_FD_D5_1_20230635_R2.fq.gz
+
+VCF:  Quartet_WGS_ILM_Nova_PCRfree_FD_D5_1_20230635.vcf
 ```
 
 Fields in the file name are explained as follows:
@@ -36,7 +38,7 @@ Fields in the file name are explained as follows:
     | Pacbio      | Pacbio    |
     | Nanopore    | ONT       |
 
-    Please note that the tables provides examples of commonly used representative sequencing platforms, rather than an exhaustive compilation of all exiting sequencing platforms. If you use sequencing platforms not listed in the table, please use 2 to 6 letters as abbreviations to represent the sequencing platforms.
+    Please note that the table provides examples of commonly used representative sequencing platforms, rather than an exhaustive compilation of all exiting sequencing platforms. If you use sequencing platforms not listed in the table, please use 2 to 6 letters as abbreviations to represent the sequencing platforms.
 
 3. SequenceMachine
 
@@ -55,7 +57,7 @@ Fields in the file name are explained as follows:
     | Nanopore    | PromethION 24 | P24        |
     | Nanopore    | MinION        | MinION     |
 
-    Please note that the tables provides examples of commonly used representative sequencing machines, rather than an exhaustive compilation of all exiting sequencing machines. If you use sequencing platforms not listed in the table, please use 2 to 6 letters as abbreviations to represent the sequencing machines.
+    Please note that the table provides examples of commonly used representative sequencing machines, rather than an exhaustive compilation of all exiting sequencing machines. If you use sequencing platforms not listed in the table, please use 2 to 6 letters as abbreviations to represent the sequencing machines.
 
 4. LibraryPrep
 
