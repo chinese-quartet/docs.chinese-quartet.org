@@ -3,7 +3,7 @@
     If you want to request reference materials, you don't need to register an account. Only need to access the [request page](https://www.chinese-quartet.org/#/materials), choose the materials you want and fill in the form. We will reply to you within 3-7 working days. If not received the confirmation email, please check the spam folder in your email box. If you have any questions, please contact [the administrator](mailto:quartet@fudan.edu.cn).
 
 
-Reference materials policy is as follows:
+Please read the following terms and conditions:
 
 1. The reference materials are free for academic use. If you want to use the reference materials for commercial purposes, please contact [the administrator](mailto:quartet@fudan.edu.cn).
 
