@@ -3,7 +3,7 @@ From Quantified Expression Profiles to QC Report
 !!! note 
     You can find the source code on [chinese-quartet/quartet-protqc-report](https://github.com/chinese-quartet/quartet-protqc-report.git)
 
-## Prepare data & metadata files
+## I. Prepare data & metadata files
 
 ### Data File
 
@@ -17,11 +17,15 @@ Please see the example of the required data file as follows.
 The metadata file has the information of each sample ID in the data file. With columns named "library", "sample" (D5, D6, F7 and M8 for Quartet samples). Remember that the column "library" and column names of the data file table must be in one-to-one correspondence. 
 
 Please see the example of the required data file as follows.
-- [Metadata Template](../../assets/images/proteomics_pipeline_meta_template.csv)
+- [Metadata Template](../../assets/templates/proteomics_pipeline_meta_template.csv)
 
-## Step by Step Guide
+## II. Step by Step Guide
 
-### Analyze your data on your own server
+### To analyze your data on Quartet Data Portal
+
+See details on [Step by Step Guide](../../getting_started/step_by_step_guide_protein.md)
+
+### To analyze your data on your own server
 
 1. Pull docker image 
 
@@ -41,23 +45,7 @@ Please see the example of the required data file as follows.
 
 3. Find your QC report in `/your-dir/multiqc_report.html`
 
-### Analyze your data on Quartet Data Portal
-
-As for running the QC pipeline of proteomics data, you can:
-
-1) go to [http://chinese-quartet.org/#/seq-flow/protqc-report-management](http://chinese-quartet.org/#/seq-flow/protqc-report-management);
-
-2) click the upper right button named "New QC report";
-
-3) click "Step 1: Choose Report", please choose "QC Report for Quartet Proteomics" ;
-
-4) click "Step 2: Upload Files (s)", please upload your data and metadata files (.csv). 
-
-5) click "Step 3: Parameters & Submit", please fill in the blanks and submit the job.
-
-See more details on [Step by Step Guide](../../getting_started/step_by_step_guide_protein.md)
-
-### More details about QC metrics
+## III. QC metrics
 
 The package protqc output Quality Control(QC) results of proteomics data for Quartet Project. The QC pipeline starts from the expression profiles at peptide/protein levels, and enables to calculate 6 metrics. A Total score is the geometric mean of the linearly normalized values of these metrics.
 
