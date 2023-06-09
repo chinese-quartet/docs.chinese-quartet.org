@@ -103,16 +103,11 @@ nav:
           - "Analysis Pipeline": data_pipelines/transcriptomics/analysis_pipeline.md
           - "QC Report": data_pipelines/transcriptomics/qc_report.md
       - Proteomics:
-          # - 'Metadata Template': data_pipelines/proteomics/metadata_template.md
-          # - 'Omics Data Format': data_pipelines/proteomics/omics_data_format.md
-          # - 'Analysis Pipeline': data_pipelines/proteomics/analysis_pipeline.md
           - "QC Report": data_pipelines/proteomics/qc_report.md
+          - "Sharing Raw Data": data_pipelines/proteomics/sharing_raw_data.md
       - Metabolomics:
-          - "Introduction": data_pipelines/metabolomics/intro.md
-          - "Metadata Template": data_pipelines/metabolomics/metadata_template.md
-          # - 'Omics Data Format': data_pipelines/metabolomics/omics_data_format.md
-          # - 'Analysis Pipeline': data_pipelines/metabolomics/analysis_pipeline.md
           - "QC Report": data_pipelines/metabolomics/qc_report.md
+          - "Sharing Raw Data": data_pipelines/metabolomics/sharing_raw_data.md
   - Tools:
       # - 'Data Repo': tools/data_repo.md
       - "Data Transfer Tools":
