@@ -1,1 +1,0 @@
-More details is comming soon. Before that, you can follow the [WGS](./analysis_pipeline_wgs.md) documentation.

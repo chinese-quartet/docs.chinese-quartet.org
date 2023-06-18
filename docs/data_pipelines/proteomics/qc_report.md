@@ -9,6 +9,7 @@ From Quantified Expression Profiles to QC Report
 
 The data file provides the quantified proteins that are mapped to gene symbols and quantified peptide sequences, and the missing values are allowed. The required file format has the columns named *Type* and *Feature*. 
 > Please ensure that there are **no duplicated** column names in the data file.
+
 > If the type of features is **Gene Symbol** only, then the metric ***Relative Correlation with Reference Datasets (RC)*** will not be calculated.
 
 Please see the example of the required data file as follows.
@@ -19,6 +20,7 @@ Please see the example of the required data file as follows.
 
 The metadata file has the information of each sample ID in the data file. With columns named "library", "sample" (D5, D6, F7 and M8 for Quartet samples). 
 > Remember that the column "library" and column names of the data file table must be in one-to-one correspondence.
+
 > If the sample type **"D6"** is missing, then the metric ***Relative Correlation with Reference Datasets (RC)*** will not be calculated.
 
 Please see the example of the required data file as follows.
