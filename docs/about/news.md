@@ -1,3 +1,15 @@
+## June 19, 2023
+
+- **Documentation Improvement**
+    - Improve some documents
+
+- **Release docker images**
+    [quartet-rnaqc-report v0.2.4-15cd635b](https://github.com/chinese-quartet/quartet-rseqc-report)
+
+- **Release new version of quartet-rseqc-report**
+    [quartet-rnaqc-report v0.2.4-15cd635b](https://www.chinese-quartet.org/#/seq-flow/rseqc-report-management)
+    Scale performance score to 1-10 and revised historical value
+
 ## June 3, 2023
 
 - **Documentation Improvement**
