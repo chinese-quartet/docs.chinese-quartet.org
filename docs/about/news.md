@@ -1,3 +1,14 @@
+## June 20, 2023
+
+- **Documentation Improvement**
+    - Improve some documents
+
+- **Release new version of quartet-protqc-report and related docker image**
+
+    - [quartet-protqc-report v0.2.4-6534a16b](https://github.com/chinese-quartet/quartet-rseqc-report)
+
+    - [quartet-protqc-report v0.2.4-6534a16b](https://www.chinese-quartet.org/#/seq-flow/rseqc-report-management)
+
 ## June 19, 2023
 
 - **Documentation Improvement**

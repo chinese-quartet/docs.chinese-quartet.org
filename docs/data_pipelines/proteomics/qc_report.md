@@ -40,7 +40,7 @@ See details on [Step by Step Guide](../../getting_started/step_by_step_guide_pro
     More versions on [Docker Registry](https://github.com/chinese-quartet/quartet-protqc-report/pkgs/container/quartet-protqc-report)
 
     ```
-    docker pull ghcr.io/chinese-quartet/quartet-protqc-report:v0.2.2-27439957
+    docker pull ghcr.io/chinese-quartet/quartet-protqc-report:v0.2.4-6534a16b
     ```
 
 2. Run quartet-protqc-report with docker image
@@ -48,7 +48,7 @@ See details on [Step by Step Guide](../../getting_started/step_by_step_guide_pro
     Assuming that your data file is named `data.csv` and metadata file is named `metadata.csv` and all files are placed in `/your-dir` directory.
 
     ```
-    docker run -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-protqc-report:v0.2.2-27439957 -d /data/data.csv -m /data/metadata.csv -o /data
+    docker run -v /your-dir:/data -it ghcr.io/chinese-quartet/quartet-protqc-report:v0.2.4-6534a16b -d /data/data.csv -m /data/metadata.csv -o /data
     ```
 
 3. Find your QC report in `/your-dir/multiqc_report.html`
