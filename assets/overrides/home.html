@@ -1,0 +1,142 @@
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %} {{ super() }}
+
+<!-- Additional styles for landing page -->
+<style>
+  /* Application header should be static for the landing page */
+  .md-header {
+    position: initial;
+  }
+
+  /* Remove spacing, as we cannot hide it completely */
+  .md-main__inner {
+    margin: 0;
+  }
+
+  .md-main {
+    background-color: #ffffff;
+  }
+
+  /* Hide main content for now */
+  .md-content {
+    display: none;
+  }
+
+  .mdx-hero__image {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mdx-hero__image img {
+    width: 23%;
+    margin: 10px;
+  }
+
+  /* Hide table of contents */
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+
+  /* Hide navigation */
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+</style>
+
+<!-- Hero for landing page -->
+<section
+  class="mdx-container"
+  style="display: flex; flex-direction: column; flex-grow: 1"
+>
+  <div class="md-grid md-typeset">
+    <div
+      class="mdx-hero"
+      style="
+        align-items: stretch;
+        display: flex;
+        color: var(--md-primary-bg-color);
+        margin: 0 0.8rem;
+      "
+    >
+      <!-- Hero content -->
+      <div
+        class="mdx-hero__content"
+        style="margin-top: 3.5rem; padding-bottom: 6vw"
+      >
+        <h1 style="color: currentcolor; font-weight: 700; margin-bottom: 1rem">
+          Quartet Project & Quartet Data Portal
+        </h1>
+        <!-- <p>{{ config.site_description }}.</p> -->
+        <p>
+          The Quartet Project provides publicly accessible multi-omics reference
+          materials and practical tools to enhance the reproducibility and
+          reliability of multi-omics results. Well-characterized multiomics
+          reference materials and quality control metrics pertinent to precision
+          medicine study purposes can be used to measure and mitigate technical
+          variation, enabling more accurate cross-batch and cross-omics data
+          integration in increasingly large-scale and longitudinal studies such
+          as the International Human Phenome Project.
+        </p>
+        <!-- <p style="text-align: left;">
+          <img src="https://img.shields.io/github/license/chinese-quartet/docs.chinese-quartet.org.svg?label=License"
+            alt="License">
+          <a href="https://github.com/chinese-quartet/docs.chinese-quartet.org/releases">
+            <img alt="Latest Release"
+              src="https://img.shields.io/github/release/chinese-quartet/docs.chinese-quartet.org.svg?label=Latest%20Release" />
+          </a>
+          <a href="https://docs.chinese-quartet.org">
+            <img alt="Status"
+              src="https://img.shields.io/github/workflow/status/chinese-quartet/docs.chinese-quartet.org/publish-docs/master?label=Status">
+          </a>
+        </p> -->
+        <a
+          href="{{ page.next_page.url | url }}"
+          title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary"
+        >
+          Quick Guide
+        </a>
+        <a
+          href="https://docs.chinese-quartet.org/about/faqs/"
+          target="_blank"
+          class="md-button md-button--primary"
+          style="margin-left: 0.5rem; margin-right: 0.5rem; margin-top: 0.5rem"
+        >
+          FAQs
+        </a>
+        <a
+          href="https://chinese-quartet.org"
+          target="_blank"
+          style="
+            color: var(--md-primary-bg-color);
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+          "
+          title="Material for MkDocs Insiders"
+          class="md-button"
+        >
+          Launch Data Portal
+        </a>
+      </div>
+    </div>
+    <div class="mdx-hero__image">
+      <img src="/assets/images/dna-materials-pack.png" />
+      <img src="/assets/images/rna-materials-pack.png" />
+      <img src="/assets/images/protein-materials-pack.png" />
+      <img src="/assets/images/metabolite-materials-pack.png" />
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}
