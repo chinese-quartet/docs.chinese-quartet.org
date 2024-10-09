@@ -21,7 +21,7 @@ More details on the data policies can be found in [the document](../policies/dat
 
 ### 3. How to bulk download the omics data files with file transfer tool?
 
-- Download a metadata table from multi-omics data page.(such as genomics data in <a href="https://www.chinese-quartet.org/#/data/download/quartet-genomics" target="_blank">Multiomics Data -> Genomics Data</a>
+- Download a metadata table from multi-omics data page.(such as genomics data in <a href="https://www.chinese-quartet.org/#/data/download/quartet-genomics" target="_blank">Multiomics Data -> Genomics Data</a>)
 
 - Get the md5sum of files which you want to download from the metadata table.
 
@@ -29,22 +29,22 @@ More details on the data policies can be found in [the document](../policies/dat
 
 #### 3.1 Download `file transfer tool - biominer-aget`
 
-Click the link to download `BioMiner Aget`: 
+Click the link to download `BioMiner Aget`:
 
-- [Linux (CentOS, Debian/Ubuntu or Others)](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_linux)
+- [Linux (CentOS, Debian/Ubuntu or Others)](https://www.indexd.org/biominer-aget/biominer-aget-x86_64-linux)
 
-- [Mac (Intel, not m1 & m2 version)](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_macosx)
+- [Mac (Intel, not m1 & m2 version)](https://www.indexd.org/biominer-aget/biominer-aget-x86_64-mac)
 
-- [Windows](https://www.indexd.org/biominer-aget/biominer-aget_x86-64_windows)
+- [Mac ARM64](https://www.indexd.org/biominer-aget/biominer-aget-x86_64-mac-arm64)
+
+- [Windows](https://www.indexd.org/biominer-aget/biominer-aget-x86_64-windows)
 
 Copy the biominer-aget_xxx binary into /usr/bin/biominer-aget_xxx or any other directory which in PATH variable.
 
 !!!note Please note that
     1. The `chunk_size` and `concurrency` parameters are related with the download speed. **There may be tens or hundreds of times the difference, so it's worth taking some time to find the best one.**
     
-    2. The biominer-aget binary is not available for mac (arm, m1 & m2).
-    
-    3. Not each file can be found in all these repos, so you need to specify a repo name when you downloading expected file.
+    2. Not each file can be found in all these repos, so you need to specify a repo name when you downloading expected file.
 
 #### 3.2 Download a data file with biominer-aget
 e.g. you want to download the file with UUID `0023a688-6569-44d7-a2cf-b031f4af8cdd` or Hash (such as md5sum, sha128...) `d4e50c8edbf5215fbe2afa1540f7c968` from the repository biominer.fudan-pgx, you can run the following command:
@@ -52,29 +52,29 @@ e.g. you want to download the file with UUID `0023a688-6569-44d7-a2cf-b031f4af8c
 ##### For Mac (Intel) Users
 
 ```bash
-biominer-aget_x86-64_macosx --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+biominer-aget-x86_64-mac --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
 
 ## or
 
-biominer-aget_x86-64_macosx --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+biominer-aget-x86_64-mac --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
 
 ## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
 
-biominer-aget_x86-64_macosx --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo node
+biominer-aget-x86_64-mac --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo node
 ```
 
 ##### For Linux Users
 
 ```bash
-biominer-aget_x86-64_linux --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+biominer-aget-x86_64-linux --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
 
 ## or
 
-biominer-aget_x86-64_linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+biominer-aget-x86_64-linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
 
 ## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
 
-biominer-aget_x86-64_linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo node
+biominer-aget-x86_64-linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo node
 ```
 
 ##### For Windows Users
@@ -82,15 +82,15 @@ biominer-aget_x86-64_linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir 
 If you download the biominer-aget_xxx binary into C://Users/xxx/Desktop, you can use the following command to download data file from QDP.
 
 ```cmd
-cmd /c C:\Users\xxx\Desktop\biominer-aget_x86-64_windows --hash d4e50c8edbf5215fbe2afa1540f7c968 --repo gsa
+cmd /c C:\Users\xxx\Desktop\biominer-aget-x86_64-windows --hash d4e50c8edbf5215fbe2afa1540f7c968 --repo gsa
 
 ## or
 
-cmd /c C:\Users\xxx\Desktop\biominer-aget_x86-64_windows --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --repo gsa --chunk_size 1m --concurrency 1000
+cmd /c C:\Users\xxx\Desktop\biominer-aget-x86_64-windows --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --repo gsa --chunk_size 1m --concurrency 1000
 
 ## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
 
-cmd /c C:\Users\xxx\Desktop\biominer-aget_x86-64_windows --hash d4e50c8edbf5215fbe2afa1540f7c968 --repo node
+cmd /c C:\Users\xxx\Desktop\biominer-aget-x86_64-windows --hash d4e50c8edbf5215fbe2afa1540f7c968 --repo node
 ```
 
 ```bash
