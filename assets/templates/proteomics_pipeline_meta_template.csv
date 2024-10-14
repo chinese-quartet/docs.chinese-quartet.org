@@ -1,0 +1,13 @@
+library,file_name,data_format,file_size,md5sum,sample,study_id,strategy,quantification,analysis_time,total_analysis,prepare_date,enzyme,qc_samples,solvent,solvent_vol,prepare_detail,injection_vol,injection_order,chromatography_type,chromatography_instrument,chromatography_column,column_temp,sample_manager_temp,mobile_phases,flow_rate,gradient_conditions,capillary,ms_instrument_type,ms_instrument_name,ion_mode,ms_detail,search_library,msms_tolerance,precursor_mass_tolerance,fragment_mass_tolerance,fdr,max_missed_cleavages,variable_modifications,fixed_modifications,mq_units,analysis_tool
+col1,,,,,D5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col2,,,,,D5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col3,,,,,D5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col4,,,,,D6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col5,,,,,D6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col6,,,,,D6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col7,,,,,F7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col8,,,,,F7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col9,,,,,F7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col10,,,,,M8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col11,,,,,M8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+col12,,,,,M8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
