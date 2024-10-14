@@ -52,11 +52,11 @@ e.g. you want to download the file with UUID `0023a688-6569-44d7-a2cf-b031f4af8c
 ##### For Mac (Intel) Users
 
 ```bash
-biominer-aget-x86_64-mac --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+biominer-aget-x86_64-mac --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --output-dir ~/Downloads/ --repo http --chunk_size 1m --concurrency 1000
 
 ## or
 
-biominer-aget-x86_64-mac --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+biominer-aget-x86_64-mac --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo http --chunk_size 1m --concurrency 1000
 
 ## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
 
@@ -70,7 +70,7 @@ biominer-aget-x86_64-linux --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b03
 
 ## or
 
-biominer-aget-x86_64-linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo gsa --chunk_size 1m --concurrency 1000
+biominer-aget-x86_64-linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir ~/Downloads/ --repo http --chunk_size 1m --concurrency 1000
 
 ## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
 
@@ -82,11 +82,11 @@ biominer-aget-x86_64-linux --hash d4e50c8edbf5215fbe2afa1540f7c968 --output-dir 
 If you download the biominer-aget_xxx binary into C://Users/xxx/Desktop, you can use the following command to download data file from QDP.
 
 ```cmd
-cmd /c C:\Users\xxx\Desktop\biominer-aget-x86_64-windows --hash d4e50c8edbf5215fbe2afa1540f7c968 --repo gsa
+cmd /c C:\Users\xxx\Desktop\biominer-aget-x86_64-windows --hash d4e50c8edbf5215fbe2afa1540f7c968 --repo http
 
 ## or
 
-cmd /c C:\Users\xxx\Desktop\biominer-aget-x86_64-windows --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --repo gsa --chunk_size 1m --concurrency 1000
+cmd /c C:\Users\xxx\Desktop\biominer-aget-x86_64-windows --guid biominer.fudan-pgx/0023a688-6569-44d7-a2cf-b031f4af8cdd --repo http --chunk_size 1m --concurrency 1000
 
 ## NODE repo doesn't support http range, so the --chunk_size and --concurrency arguments don't work for it.
 
@@ -109,7 +109,7 @@ FLAGS:
 
 OPTIONS:
     -a, --api-server <api-server>      The api server address
-    -k, --chunk_size <chunk_size>      The number ofinterval length of each concurrent request [default: '50m']
+    -k, --chunk_size <chunk_size>      The number of interval length of each concurrent request [default: '50m']
     -c, --concurrency <concurrency>    The number of concurrency request [default: 10]
         --dns-timeout <dns-timeout>    DNS Timeout(seconds) of request [default: 10]
     -g, --guid <guid>                  The guid of the file you want to download, e.g. biominer.fudan-pgx/00006134-c655-
@@ -117,8 +117,8 @@ OPTIONS:
     -H, --hash <hash>                  The hash of the file you want to download, e.g. b47ee06cdf62847f6d4c11bb12ac1ae0
     -o, --output-dir <output-dir>      Output directory [default: ./]
     -p, --password <password>          Password for the biominer api server [default: anonymous]
-    -r, --repo <repo>                  Which data repository you want to download from [default: node]  [possible
-                                       values: node, gsa, s3, oss, minio]
+    -r, --repo <repo>                  Which data repository you want to download from [default: node] [possible
+                                       values: node, gsa, s3, oss, minio, http]
         --retries <retries>            The maximum times of retring [default: 0]
         --retry-wait <retry-wait>      The seconds between retries [default: 0]
     -t, --timeout <timeout>            Timeout(seconds) of request [default: 60]
